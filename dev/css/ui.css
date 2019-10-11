@@ -4,6 +4,9 @@
 1. 폰트
 =========================================================*/
 
+/* Lato */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
 /* 본고딕 */
 @font-face {
 	font-family: "Noto Sans KR";
@@ -49,11 +52,56 @@
 	url("../fonts/notokr-black.woff") format("woff");
 }
 
+/* 나눔스퀘어 */
+@font-face {
+    font-family:"Nanum Square";
+    font-weight:300;
+    font-style:normal;
+    src:local("※"),
+    url("../font/nsquare_light.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_light.woff") format("woff"),
+    url("../font/nsquare_light.ttf") format("truetype"),
+    url("../font/nsquare_light.otf") format("opentype");
+}
+
+@font-face {
+    font-family:"Nanum Square";
+    font-weight:normal;
+    font-style:normal;
+    src:local("※"),
+    url("../font/nsquare_regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_regular.woff") format("woff"),
+    url("../font/nsquare_regular.ttf") format("truetype"),
+    url("../font/nsquare_regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family:"Nanum Square";
+    font-weight:700;
+    font-style:normal;
+    src:local("※"),
+    url("../font/nsquare_bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_bold.woff") format("woff"),
+    url("../font/nsquare_bold.ttf") format("truetype"),
+    url("../font/nsquare_bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family:"Nanum Square";
+    font-weight:900;
+    font-style:normal;
+    src:local("※"),
+    url("../font/nsquare_extrabold.eot?#iefix") format("embedded-opentype"),
+    url("../font/nsquare_extrabold.woff") format("woff"),
+    url("../font/nsquare_extrabold.ttf") format("truetype"),
+    url("../font/nsquare_extrabold.otf") format("opentype");
+}
+
 /*=========================================================
 2. 리셋
 =========================================================*/
 
-html {font-size:1em; letter-spacing:-0.025em;}
+html {font-size:1em; letter-spacing:-0.040em;}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button {-webkit-box-sizing:border-box;box-sizing:border-box; margin:0; padding:0; border:0; font-family:"Noto Sans KR",Dotum,"돋움",Helvetica,"Apple SD Gothic Neo",sans-serif; font-size:100%; vertical-align:baseline;}
 
 input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box;box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0; background:none; font-family:"Noto Sans KR",Dotum,"돋움",Helvetica,"Apple SD Gothic Neo",sans-serif; font-size:100%; letter-spacing:-0.04em; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
@@ -107,8 +155,8 @@ html {overflow-y:scroll; -webkit-font-smoothing:antialiased; -moz-osx-font-smoot
 3. 공통 레이아웃
 =========================================================*/
 
-.container {position:relative; max-width:1620px; margin:0 auto; padding:0 30px;}
-.content {}
+.container {position:relative; max-width:1260px; margin:0 auto; padding:0 30px;}
+.container.wide {max-width:1400px; padding:0;}
 .move_top {visibility:hidden; position:fixed; right:30px; bottom:100px; z-index:7; -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0;}
 .move_top.on {visibility:visible; bottom:110px; opacity:1;}
 .move_top button {position:relative; width:30px; height:30px; border:1px solid #ca0464; background:#fff; line-height:1; text-align:center; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
@@ -122,7 +170,7 @@ html {overflow-y:scroll; -webkit-font-smoothing:antialiased; -moz-osx-font-smoot
 .ie9 button {overflow:hidden; position:absolute; top:20px; right:20px; width:30px; height:30px; background:url(../img/sprite/sprite.png); background-position:-10px -258px; text-indent:-9999px;}
 
 @media (max-width:1024px) {
-	.content {padding-top:50px;}
+	
 }
 
 @media (max-width:599px) {
@@ -174,6 +222,44 @@ html {overflow-y:scroll; -webkit-font-smoothing:antialiased; -moz-osx-font-smoot
 /*=========================================================
 9. 서브 페이지 스타일
 =========================================================*/
+
+/* 컨텐츠 박스 */
+[data-sub-content] {padding:80px 0 100px;}
+[data-sub-content] .cont_tit {margin-top:-10px; font-family:"Lato"; font-size:50px; font-weight:900; line-height:1.2em; text-transform:uppercase;}
+[data-sub-content] .cont_tit.minor {font-size:40px;}
+[data-sub-content] .cont_tit.inline {display:inline-block;}
+[data-sub-content] .sub_tit,
+[data-sub-content] .sub_txt {margin-top:-6px; font-size:30px; line-height:1.4em;}
+[data-sub-content] .cont_tit + .sub_tit,
+[data-sub-content] .cont_tit + .sub_txt {margin-top:10px;}
+[data-content-box].bg {background:#efefef;}
+
+@media (max-width:1024px) {
+	[data-sub-content] {padding:30px 0 50px;}
+	[data-sub-content] .cont_tit, 
+	[data-sub-content] .cont_tit.minor {margin-top:0; font-size:32px;}
+	[data-sub-content] .sub_tit,
+	[data-sub-content] .sub_txt {margin-top:0; font-size:20px;}
+}
+
+@media (max-width:599px) {
+	[data-sub-content] .cont_tit, 
+	[data-sub-content] .cont_tit.minor {font-size:24px;}
+	[data-sub-content] .sub_tit,
+	[data-sub-content] .sub_txt {font-size:16px;}
+}
+
+/* 미션&비전 */
+.mission {}
+
+/* 주요연혁 */
+.history {}
+
+/* 고객사 */
+.customer {}
+
+/* 찾아오시는길 */
+.map {}
 
 /*=========================================================
 10. animate

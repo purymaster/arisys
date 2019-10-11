@@ -1,0 +1,43 @@
+@@include('header.html')
+<div class="content">
+	@@include('sub_visual.html')
+
+	<style>
+		.guide_tit {
+			margin: 1em 0;
+			padding-left: 1em;
+			background: #a6c742;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 2em;
+		}
+	</style>
+
+	<!--  서브 페이지 컨텐츠 -->
+	<div class="" data-sub-content>
+
+		<div class="container">
+
+			<!-- 컨텐츠 박스 -->
+			<p class="guide_tit">컨텐츠 박스</p>
+			<div data-content-box>
+				<h3 class="cont_tit">Content Title</h3>
+				<p class="sub_tit">서브 타이틀</p>
+				<p class="sub_txt">서브 텍스트</p>
+
+			</div>
+			<!-- //컨텐츠 박스 -->
+
+			<!-- 컨텐츠 박스(회색) -->
+			<p class="guide_tit">컨텐츠 박스(회색)</p>
+			<div class="bg" data-content-box>
+				<h3 class="cont_tit minor inline">Content Title</h3>
+			</div>
+			<!-- //컨텐츠 박스(회색) -->
+
+		</div>
+	</div>
+	<!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

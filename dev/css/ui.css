@@ -232,6 +232,7 @@ html {overflow-y:scroll; -webkit-font-smoothing:antialiased; -moz-osx-font-smoot
 [data-sub-content] .sub_txt {margin-top:-6px; font-size:30px; line-height:1.4em;}
 [data-sub-content] .cont_tit + .sub_tit,
 [data-sub-content] .cont_tit + .sub_txt {margin-top:10px;}
+[data-content-box] {padding:50px 0;}
 [data-content-box].bg {background:#efefef;}
 
 @media (max-width:1024px) {
@@ -240,6 +241,7 @@ html {overflow-y:scroll; -webkit-font-smoothing:antialiased; -moz-osx-font-smoot
 	[data-sub-content] .cont_tit.minor {margin-top:0; font-size:32px;}
 	[data-sub-content] .sub_tit,
 	[data-sub-content] .sub_txt {margin-top:0; font-size:20px;}
+	[data-content-box] {padding:30px 0;}
 }
 
 @media (max-width:599px) {

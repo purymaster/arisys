@@ -35,6 +35,21 @@
 			</div>
 			<!-- //컨텐츠 박스(회색) -->
 
+			<!-- 검색창 -->
+			<p class="guide_tit">검색창</p>
+			<div data-search-box>
+				<div class="search_wrap">
+					@@include('select.html', {
+					"context" : {
+					"use" : true,
+					"value" : ["제목", "작성자", "내용"]
+					}
+					})
+					<input type="text">
+					<button type="submit" class="search">검색</button>
+				</div>
+			</div>
+
 		</div>
 	</div>
 	<!--  //서브 페이지 컨텐츠 -->

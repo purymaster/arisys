@@ -1,3 +1,23 @@
-<div class="sub_visual" style="background:#999; line-height:410px; text-align:center; color:#fff; font-size:40px;">
-	임시 서브비주얼
+<div data-sub-visual>
+	<div class="container">
+		<div class="visual_wrap">
+			<span class="sub_tit">@@sub_tit</span>
+			<h2 class="tit">@@tit</h2>
+			<div class="breadcrumb">
+				<ol>
+					<li class="home">
+						<a href="#">홈</a>
+					</li>
+					<li>
+						@@include('select.html', {
+						"context" : {
+						"use" : true,
+						"value" : ["1뎁스 메뉴1", "1뎁스 메뉴2", "1뎁스 메뉴3"]
+						}
+						})
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
 </div>

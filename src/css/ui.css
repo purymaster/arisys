@@ -353,7 +353,7 @@ footer .copyright span {font-family:inherit; color:#a6c742;}
 =========================================================*/
 
 /* 컨텐츠 박스 */
-[data-sub-content] {padding:80px 0 100px;}
+[data-sub-content] {padding:100px 0;}
 [data-sub-content] .cont_tit {margin-top:-10px; font-family:"Lato"; font-size:50px; font-weight:900; line-height:1.2em; text-transform:uppercase;}
 [data-sub-content] .cont_tit.minor {font-size:40px;}
 [data-sub-content] .cont_tit.inline {display:inline-block;}
@@ -394,83 +394,74 @@ footer .copyright span {font-family:inherit; color:#a6c742;}
 .mission {}
 
 /* 주요연혁 */
-
-.history .tit_bx{ text-align: center;}
-.history .history_cont {position: relative; }
-.history .history_cont:before { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width: 1px; background-color: #cdcdcd;}
-.history dl { margin-top: -50px }
-.history dl:after { content:""; display: table; clear: both;}
-.history dl dt { float: left; width: 50%; font-size: 60px; line-height: 1.5em; color: #a6c742; font-weight: 900; font-family: "Lato"; text-align: right; padding-right: 55px; margin-top: -23px; }
-.history dl dd {float: left; width: 50%; margin-top: -7px; }
-.history .text_list ul li { font-size: 16px; line-height: 1.5em; margin-bottom: 25px; position: relative;  padding-left: 25px;}
-.history .text_list ul li:last-child { margin-bottom: 0;}
-.history .text_list ul li:before { content:""; position: absolute; left: -5px; top: 50%; width: 9px;height: 9px; border-radius: 50%; background-color: #fff; border: 1px solid #a6c742; transform: translateY(-50%); }
-
-
-
-
-
-
-
-
-
-
+.history .tit_bx {text-align:center;}
+.history .history_cont {position:relative; margin-bottom:-100px;}
+.history .history_cont:before {position:absolute; top:0; left:50%; width:1px; height:100%; background-color:#cdcdcd; content:"";}
+.history dl:after {display:table; clear:both; content:"";}
+.history dl dt {float:left; width:50%; margin-top:-23px; padding-right:55px; font-family:"Lato"; font-size:60px; font-weight:900; line-height:1.5em; color:#a6c742; text-align:right;}
+.history dl dd {float:left; width:50%; margin-top:-7px;}
+.history .text_list ul li {position:relative; margin-bottom:25px; padding-left:25px; font-size:16px; line-height:1.5em;}
+.history .text_list ul li:last-child {margin-bottom:0;}
+.history .text_list ul li:before {position:absolute; top:50%; left:-5px; width:9px; height:9px; border:1px solid #a6c742; border-radius:50%; background-color:#fff; transform:translateY(-50%); content:"";}
 
 /* 고객사 */
-.customer .customer_cont { position: relative; margin-top: -50px; padding-top: 50px;}
-.customer .top_line:first-child:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 1px; background-color: #cdcdcd; }
-.customer .customer_cont:after { content:""; display: table; clear: both;}
-.customer .customer_tit { float: left; width: 25%;}
-.customer .customer_img {float: left; width: 75%; }
-.customer .customer_img .img_list { line-height: 0; font-size: 0; margin-bottom: -20px; }
-.customer .customer_img .img_list li { display: inline-block; padding: 0 30px 20px 0;}
-.customer .customer_img a { display: block; line-height: 0; border: 1px solid #dfdfdf;}
+.customer .customer_cont {position:relative; margin-top:-50px; padding-top:50px;}
+.customer .top_line:first-child:before {position:absolute; top:0; left:0; width:100%; height:1px; background-color:#cdcdcd; content:"";}
+.customer .customer_cont:after {display:table; clear:both; content:"";}
+.customer .customer_tit {float:left; width:25%;}
+.customer .customer_img {float:left; width:75%;}
+.customer .customer_img .img_list {margin-bottom:-20px; font-size:0; line-height:0;}
+.customer .customer_img .img_list li {display:inline-block; padding:0 30px 20px 0;}
+.customer .customer_img a {display:block; border:1px solid #dfdfdf; line-height:0;}
+
 @media (max-width:1024px) {
-	.customer .customer_cont {margin-top: -30px; padding-top: 30px; }
-	.customer .customer_img .img_list li { padding: 0 15px 10px 0;}
-	.customer .customer_tit { float: none; width: 100%; margin-bottom: 30px;}
-	.customer .customer_img { float: none; width: 100%;}
-	.customer .customer_img img { width: 100px; height: 43px; }
+	.customer .customer_cont {margin-top:-30px; padding-top:30px;}
+	.customer .customer_img .img_list li {padding:0 15px 10px 0;}
+	.customer .customer_tit {float:none; width:100%; margin-bottom:30px;}
+	.customer .customer_img {float:none; width:100%;}
+	.customer .customer_img img {width:100px; height:43px;}
 }
+
 @media (max-width:599px) {
-	.customer .customer_img .img_list { margin-bottom: -15px; }
-	.customer .customer_tit {margin-bottom: 15px; }
+	.customer .customer_img .img_list {margin-bottom:-15px;}
+	.customer .customer_tit {margin-bottom:15px;}
 }
 
 /* 찾아오시는길 */
-.map .map_box {position: relative; height: 500px; width: 100%; }
-.map .map_box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #a6c742;}
-.map .contact_box:after {content: ""; display: table; clear: both; }
-.map .contact_box .contact_tit { float: left; width: 33%; }
-.map .contact_box .contact_cont { float: left; width: 67%; }
-.map .contact_box .icon_text > li { position: relative; padding: 6px 0 6px 92px; margin-bottom: 20px; }
-.map .contact_box .icon_text > li:before {content: ""; position: absolute; left: 0; top: 0; width: 62px; height: 62px; border-radius: 50%; background-color: #a6c742; }
-.map .contact_box .icon_text > li:last-child { margin-bottom: 0; }
-.map .contact_box .text_harp { font-size: 0; line-height: 0; }
-.map .contact_box .text_harp li { display: inline-block; padding-right: 50px;}
-.map .contact_box .text_harp li:last-child{padding-right: 0; }
-.map .contact_box .title { font-size: 18px; color: #222; line-height: 1.5em; font-weight: 700; font-family:"Nanum Square";}
-.map .contact_box .text { font-size: 16px; color: #555; line-height: 1.5em;}
-.map .contact_box .text a {color:inherit;} 
+.map .map_box {position:relative; width:100%; height:500px;}
+.map .map_box iframe {position:absolute; top:0; left:0; width:100%; height:100%; background-color:#a6c742;}
+.map .contact_box:after {display:table; clear:both; content:"";}
+.map .contact_box .contact_tit {float:left; width:33%;}
+.map .contact_box .contact_cont {float:left; width:67%;}
+.map .contact_box .icon_text > li {position:relative; margin-bottom:20px; padding:6px 0 6px 92px;}
+.map .contact_box .icon_text > li:before {position:absolute; top:0; left:0; width:62px; height:62px; border-radius:50%; background-color:#a6c742; content:"";}
+.map .contact_box .icon_text > li:last-child {margin-bottom:0;}
+.map .contact_box .text_harp {font-size:0; line-height:0;}
+.map .contact_box .text_harp li {display:inline-block; padding-right:50px;}
+.map .contact_box .text_harp li:last-child {padding-right:0;}
+.map .contact_box .title {font-family:"Nanum Square"; font-size:18px; font-weight:700; line-height:1.5em; color:#222;}
+.map .contact_box .text {font-size:16px; line-height:1.5em; color:#555;}
+.map .contact_box .text a {color:inherit;}
 
 @media (max-width:1024px) {
-	.map .map_box {height: 400px; }
-	.map .contact_box .contact_tit { float: none; width: 100%; margin-bottom: 30px; }
-	.map .contact_box .contact_cont { float: none; width: 100%; }
-	.map .contact_box .title { font-size: 16px;}
-	.map .contact_box .text { font-size: 14px;}
+	.map .map_box {height:400px;}
+	.map .contact_box .contact_tit {float:none; width:100%; margin-bottom:30px;}
+	.map .contact_box .contact_cont {float:none; width:100%;}
+	.map .contact_box .title {font-size:16px;}
+	.map .contact_box .text {font-size:14px;}
 }
 
 @media (max-width:599px) {
-	.map .map_box { height: 300px;}
-	.map .contact_box .contact_tit { margin-bottom: 15px;}
-	.map .contact_box .text_harp li { display: block; margin-bottom: 15px;}
-	.map .contact_box .text_harp li:last-child { margin-bottom: 0; }
-	.map .contact_box .icon_text > li { padding: 0 0 0 50px;}
-	.map .contact_box .icon_text > li:before { width: 31px; height: 31px; }
-	.map .contact_box .title { font-size: 14px;}
-	.map .contact_box .text { font-size: 12px;}
+	.map .map_box {height:300px;}
+	.map .contact_box .contact_tit {margin-bottom:15px;}
+	.map .contact_box .text_harp li {display:block; margin-bottom:15px;}
+	.map .contact_box .text_harp li:last-child {margin-bottom:0;}
+	.map .contact_box .icon_text > li {padding:0 0 0 50px;}
+	.map .contact_box .icon_text > li:before {width:31px; height:31px;}
+	.map .contact_box .title {font-size:14px;}
+	.map .contact_box .text {font-size:12px;}
 }
+
 /*=========================================================
 10. animate
 =========================================================*/

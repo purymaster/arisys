@@ -1,8 +1,8 @@
-<div data-sub-visual>
+<div data-sub-visual class=@@type data-animation>
 	<div class="container">
 		<div class="visual_wrap">
-			<span class="sub_tit">@@sub_tit</span>
-			<h2 class="tit">@@tit</h2>
+			<span class="sub_tit" data-animation="fadeInUp" data-delay="0">@@sub_tit</span>
+			<h2 class="tit" data-animation="fadeInUp" data-delay="3">@@tit</h2>
 			<div class="breadcrumb">
 				<ol>
 					<li class="home">
@@ -13,6 +13,14 @@
 						"context" : {
 						"use" : true,
 						"value" : ["1뎁스 메뉴1", "1뎁스 메뉴2", "1뎁스 메뉴3"]
+						}
+						})
+					</li>
+					<li>
+						@@include('select.html', {
+						"context" : {
+						"use" : true,
+						"value" : ["2뎁스 메뉴1", "2뎁스 메뉴2", "2뎁스 메뉴3"]
 						}
 						})
 					</li>

@@ -5,7 +5,7 @@
 =========================================================*/
 
 /* Lato */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
 /* 본고딕 */
 @font-face {
@@ -603,6 +603,37 @@ footer .copyright span {font-family:inherit; color:#a6c742;}
 /*=========================================================
 8. 메인 페이지 스타일
 =========================================================*/
+
+/* 메인 슬라이드 */
+.main_visual .slider {position:relative;}
+.main_visual [data-slide] .slide {display:table; width:100%; height:calc(100vh - 70px); min-height:640px; background:#ccc; background-position:center !important; background-size:cover !important; color:#fff;}
+.main_visual [data-slide] .slide .txt_wrap {display:table-cell; vertical-align:middle;}
+.main_visual [data-slide] .slide .tit {overflow:hidden; max-height:2.4em; font-family:"Lato"; font-size:70px; font-weight:300; line-height:1.2em; text-transform:uppercase;}
+.main_visual [data-slide] .slide .tit strong {font-weight:900;}
+.main_visual [data-slide] .slide .sub_txt {overflow:hidden; margin-top:25px; font-size:20px; line-height:1.5em; max-height:3em;}
+.main_visual [data-slide] .slick-dots {position:absolute; left:50%; bottom:20vh; margin:0 -8px; line-height:0; margin-left:-600px;}
+.main_visual [data-slide] .slick-dots li {display:inline-block; width:10px; height:10px; margin-right:16px;}
+.main_visual [data-slide] .slick-dots li:last-child {margin:0;}
+.main_visual [data-slide] .slick-dots li button { position:relative; width:10px; height:10px; border-radius:50%; background:#fff; text-indent:-9999px;}
+.main_visual [data-slide] .slick-dots li button:after {visibility:hidden; position:absolute; top:50%; left:50%; -webkit-box-sizing:border-box; box-sizing:border-box; width:100%; height:100%; border:1px solid #fff; border-radius:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0; content:"";}
+.main_visual [data-slide] .slick-dots .slick-active button:after {visibility:visible; width:250%; height:250%; opacity:1;}
+.main_visual .slider .scroll {position:absolute; bottom:50px; left:50%; width:40px; height:40px; border:2px solid #fff; border-radius:50%; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
+.main_visual .slider .scroll:hover {bottom:40px; border-color:#a6c742; background:#a6c742;}
+.main_visual .slider .scroll:before {position:absolute; top:50%; left:50%; width:7px; height:20px; margin-top:-14px; margin-left:-1px; border-bottom:1px solid #fff; border-left:1px solid #fff; -webkit-transform:skewY(-45deg); transform:skewY(-45deg); content:"";}
+
+@media (max-width:1260px) {
+	.main_visual [data-slide] .slick-dots {left:30px; margin-left:0;}
+}
+
+@media (max-width:1024px) {
+	
+}
+
+/* 솔루션 */
+
+/* 포트폴리오 */
+
+/* 블로그 */
 
 /*=========================================================
 9. 서브 페이지 스타일

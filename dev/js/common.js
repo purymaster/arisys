@@ -71,6 +71,21 @@ $(function() {
 
     /******************** 슬라이드 제어 ********************/
 
+    /* 메인페이지 메인 슬라이드 */
+    var main_slide = $('.main_visual [data-slide]');
+
+    main_slide.slick({
+        arrows: false,
+        fade: true,
+        dots: true,
+        // dotsClass: "main_visual_dots",
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+    });
+
     /******************** 스크롤 애니메이션 정의 ********************/
 
     var move_el = $('[data-animation]'), //무빙 요소
@@ -122,29 +137,4 @@ $(function() {
         });
 
     });
-
-    /******************** 모달 제어 ********************/
-
-    $('[data-modal] .close').on('click', function() {
-        close_modal();
-    })
-
 });
-
-/******************** 모달, 로딩 제어 ********************/
-
-function show_modal(target) {
-    $(target).show();
-}
-
-function close_modal() {
-    $('[data-modal]').hide();
-}
-
-function show_loading() {
-    $('[data-loading]').show();
-}
-
-function hide_loading() {
-    $('[data-loading]').hide();
-}

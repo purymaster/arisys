@@ -1,0 +1,37 @@
+@@include('header.html')
+<div class="content">
+	@@include('sub_visual.html', {
+	"type" : "type4",
+	"sub_tit" : "BLOG",
+	"tit" : "아리뉴스"
+	})
+
+	<!--  서브 페이지 컨텐츠 -->
+	<div class="" data-sub-content>
+		<div class="container">
+			<div data-board-list>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="https://picsum.photos/300/200" alt="">
+							<div class="txt_wrap">
+								<p class="tit">2019년 아리시스의 새로운 도약</p>
+								<p class="txt">
+									현재도 미래에도 사람을 위한 기술발전은 계속진전될 것입니다. 그 발전의 결과물들을 기업내부에 쉽게 적용시키지 못하고 또한 기술 발전의 결과를 적용한다고
+									하더라도 아주 제한적인못하고 또한 기술 발전의 결과를 적용한다고 하더라도 아주 제한적인 활용으로 그치고 있는 것이 현실입니다. 활용으로 그치고 있는
+									것이 현실입니다.
+								</p>
+								<span class="time">19.08.08</span>
+							</div>
+						</a>
+					</li>
+					<!-- <li style="text-align:center; line-height:2.5em;">데이터가 존재하지 않습니다.</li> -->
+				</ul>
+			</div>
+			@@include('paging.html')
+		</div>
+	</div>
+	<!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

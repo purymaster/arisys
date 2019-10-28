@@ -12,7 +12,7 @@
 	</style>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script>
-		$(function () { var t, i, h, n = $("table.list"); n.each(function () { $(this).find("tr:gt(0)").hover(function () { $(this).addClass("hover") }, function () { $(this).removeClass("hover") }).each(function (t) { $("td:eq(0)", this).text(t + 1), "" != $("td:eq(1)", this).text() && $(this).addClass("part") }).find("td").each(function () { "" == $(this).text() && $(this).addClass("nodata") }), $(this).find("tr").each(function () { i = $(this).find("td:eq(5)").text(), h = "<a href='" + i + "/dev/html/", $(this).find(".ico").hasClass("end") && $(this).find("td:last-child").html(h) }), t = $(this).data("name"), $(this).find("tr").each(function () { i = $(this).find("td:eq(5)").text(), h = "<a href='" + t + "/dev/html/" + i + ".html' target='_blank' title='새창열림'>보기</a>", $(this).find(".ico").hasClass("end") && $(this).find("td:last-child").html(h) }) }), $(".map_wrap").each(function () { $(this).find(".process dd").text(Math.ceil(($(this).find("em.end").length - 1) / $(this).find("tbody").children("tr").length * 100) + "%") }) });
+		$(function () { var t, i, h, n = $("table.list"); n.each(function () { $(this).find("tr:gt(0)").hover(function () { $(this).addClass("hover") }, function () { $(this).removeClass("hover") }).each(function (t) { $("td:eq(0)", this).text(t + 1), "" != $("td:eq(1)", this).text() && $(this).addClass("part") }).find("td").each(function () { "" == $(this).text() && $(this).addClass("nodata") }), $(this).find("tr").each(function () { i = $(this).find("td:eq(5)").text(), h = "<a href='" + i + "/dev/html/", $(this).find(".ico").hasClass("end") && $(this).find("td:last-child").html(h) }), $(this).find("tr").each(function () { i = $(this).find("td:eq(5)").text(), h = "<a href='dev/html/" + i + ".html' target='_blank' title='새창열림'>보기</a>", $(this).find(".ico").hasClass("end") && $(this).find("td:last-child").html(h) }) }), $(".map_wrap").each(function () { $(this).find(".process dd").text(Math.ceil(($(this).find("em.end").length - 1) / $(this).find("tbody").children("tr").length * 100) + "%") }) });
 	</script>
 </head>
 
@@ -35,7 +35,7 @@
 				</ul>
 			</div>
 			<div class="table_wrap">
-				<table class="list d4" data-name="kor">
+				<table class="list d4">
 					<caption>코딩 리스트</caption>
 					<thead>
 						<tr>
@@ -60,9 +60,9 @@
 							<td></td>
 							<td></td>
 							<td class="center">guide</td>
-							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td class="center">구창근</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/28</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>
@@ -89,10 +89,10 @@
 							<td>미션&비전</td>
 							<td></td>
 							<td></td>
-							<td class="center"></td>
-							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td class="center">mission</td>
+							<td class="center">천송경</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/23</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>
@@ -115,10 +115,10 @@
 							<td>주요연혁</td>
 							<td></td>
 							<td></td>
-							<td class="center"></td>
-							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td class="center">history</td>
+							<td class="center">천송경</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/24</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>
@@ -138,13 +138,26 @@
 						<tr>
 							<td class="center"></td>
 							<td></td>
-							<td>Contacts</td>
+							<td>고객사</td>
 							<td></td>
 							<td></td>
+							<td class="center">customer</td>
+							<td class="center">천송경</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/22</td>
+							<td></td>
 							<td class="center"></td>
+						</tr>
+						<tr>
 							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td></td>
+							<td>Contact us</td>
+							<td></td>
+							<td></td>
+							<td class="center">map</td>
+							<td class="center">천송경</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/17</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>
@@ -277,10 +290,10 @@
 							<td>아리뉴스</td>
 							<td>list</td>
 							<td></td>
-							<td class="center"></td>
-							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td class="center">news_list</td>
+							<td class="center">구창근</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/28</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>
@@ -290,10 +303,10 @@
 							<td></td>
 							<td>view</td>
 							<td></td>
-							<td class="center"></td>
-							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td class="center">news_view</td>
+							<td class="center">구창근</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/28</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>
@@ -303,10 +316,10 @@
 							<td>아리문화</td>
 							<td>list</td>
 							<td></td>
-							<td class="center"></td>
-							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td class="center">culture_list</td>
+							<td class="center">구창근</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/28</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>
@@ -316,10 +329,10 @@
 							<td></td>
 							<td>view</td>
 							<td></td>
-							<td class="center"></td>
-							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td class="center">culture_view</td>
+							<td class="center">구창근</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/28</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>
@@ -331,10 +344,10 @@
 							<td>인재상</td>
 							<td></td>
 							<td></td>
-							<td class="center"></td>
-							<td class="center"></td>
-							<td class="center"><em class="ico standby">s</em></td>
-							<td class="center"></td>
+							<td class="center">recruit</td>
+							<td class="center">천송경</td>
+							<td class="center"><em class="ico end">e</em></td>
+							<td class="center">10/25</td>
 							<td></td>
 							<td class="center"></td>
 						</tr>

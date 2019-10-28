@@ -1,6 +1,10 @@
 @@include('header.html')
 <div class="content">
-	@@include('sub_visual.html')
+	@@include('sub_visual.html', {
+	"type" : "type1",
+	"sub_tit" : "ABOUT ARISYS",
+	"tit" : "주요연혁"
+	})
 
 	<!--  서브 페이지 컨텐츠 -->
 	<div class="history" data-sub-content>

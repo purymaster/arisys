@@ -1,6 +1,10 @@
 @@include('header.html')
 <div class="content">
-	@@include('sub_visual.html')
+	@@include('sub_visual.html', {
+	"type" : "type1",
+	"sub_tit" : "ABOUT ARISYS",
+	"tit" : "오시는 길"
+	})
 
 	<!--  서브 페이지 컨텐츠 -->
 	<div class="map" data-sub-content>
@@ -23,11 +27,15 @@
 								<ul class="text_harp">
 									<li>
 										<p class="title">기술 문의</p>
-										<p class="text"><a href="mailto:tech-support@arisys.co.kr">tech-support@arisys.co.kr</a></p>
+										<p class="text"><a
+												href="mailto:tech-support@arisys.co.kr">tech-support@arisys.co.kr</a>
+										</p>
 									</li>
 									<li>
 										<p class="title">영업 문의</p>
-										<p class="text"><a href="mailto:sales-support@arisys.co.kr">sales-support@arisys.co.kr</a></p>
+										<p class="text"><a
+												href="mailto:sales-support@arisys.co.kr">sales-support@arisys.co.kr</a>
+										</p>
 									</li>
 								</ul>
 							</li>

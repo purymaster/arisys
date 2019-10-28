@@ -1,6 +1,10 @@
 @@include('header.html')
 <div class="content">
-	@@include('sub_visual.html')
+	@@include('sub_visual.html', {
+	"type" : "type1",
+	"sub_tit" : "ABOUT ARISYS",
+	"tit" : "미션&비전"
+	})
 
 	<!--  서브 페이지 컨텐츠 -->
 	<div class="mission" data-sub-content>
@@ -23,16 +27,16 @@
 			<div class="container wide">
 				<div class="vision">
 					<div class="container">
-							<div class="mv_box vision_cont">
-									<div class="tit">
-										<h3 class="cont_tit">vision</h3>
-										<p class="sub_tit">비전</p>
-									</div>
-									<div class="mv_text">
-										<p class="text_tit">“ Only one provider that connects to your innovative future ”</p>
-										<p class="text">여러분의 혁신적인 미래로 연결되는 단 하나의 프로바이더</p>
-									</div>
-								</div>
+						<div class="mv_box vision_cont">
+							<div class="tit">
+								<h3 class="cont_tit">vision</h3>
+								<p class="sub_tit">비전</p>
+							</div>
+							<div class="mv_text">
+								<p class="text_tit">“ Only one provider that connects to your innovative future ”</p>
+								<p class="text">여러분의 혁신적인 미래로 연결되는 단 하나의 프로바이더</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

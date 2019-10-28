@@ -88,11 +88,11 @@
 			</header>
 		</div>
 		<div class="content">
-			<div data-sub-visual>
+			<div data-sub-visual class=type1 data-animation>
 				<div class="container">
 					<div class="visual_wrap">
-						<span class="sub_tit">@@sub_tit</span>
-						<h2 class="tit">@@tit</h2>
+						<span class="sub_tit" data-animation="fadeInUp" data-delay="0">ENGLISH TITLE</span>
+						<h2 class="tit" data-animation="fadeInUp" data-delay="3">페이지 제목</h2>
 						<div class="breadcrumb">
 							<ol>
 								<li class="home">
@@ -103,9 +103,20 @@
 										<input type="hidden">
 										<button type="button"><span>1뎁스 메뉴1</span></button>
 										<ul>
-											<li><a href="#none" value="value">1뎁스 메뉴1</a></li>
-											<li><a href="#none" value="value">1뎁스 메뉴2</a></li>
-											<li><a href="#none" value="value">1뎁스 메뉴3</a></li>
+											<li><a href="#none">1뎁스 메뉴1</a></li>
+											<li><a href="#none">1뎁스 메뉴2</a></li>
+											<li><a href="#none">1뎁스 메뉴3</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="select_form">
+										<input type="hidden">
+										<button type="button"><span>2뎁스 메뉴1</span></button>
+										<ul>
+											<li><a href="#none">2뎁스 메뉴1</a></li>
+											<li><a href="#none">2뎁스 메뉴2</a></li>
+											<li><a href="#none">2뎁스 메뉴3</a></li>
 										</ul>
 									</div>
 								</li>
@@ -116,17 +127,54 @@
 			</div>
 			<style>
 				.guide_tit {
-					margin: 1em 0;
-					padding-left: 1em;
-					background: #a6c742;
-					font-size: 14px;
-					font-weight: 700;
-					line-height: 2em;
-				}
-			</style>
+			margin: 1em 0;
+			padding-left: 1em;
+			background: #a6c742;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 2em;
+		}
+	</style>
 			<!--  서브 페이지 컨텐츠 -->
 			<div class="" data-sub-content>
 				<div class="container">
+					<!-- 탭메뉴 -->
+					<div data-tab-menu>
+						<ul class="type6">
+							<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+							<li>
+								<a href="#">
+									<span>CC</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>UC</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>영상회의</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>SI</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>CLOUD</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>부가 솔루션</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //탭메뉴 -->
 					<!-- 컨텐츠 박스 -->
 					<p class="guide_tit">컨텐츠 박스</p>
 					<div data-content-box>
@@ -149,15 +197,189 @@
 								<input type="hidden">
 								<button type="button"><span>제목</span></button>
 								<ul>
-									<li><a href="#none" value="value">제목</a></li>
-									<li><a href="#none" value="value">작성자</a></li>
-									<li><a href="#none" value="value">내용</a></li>
+									<li><a href="#none">제목</a></li>
+									<li><a href="#none">작성자</a></li>
+									<li><a href="#none">내용</a></li>
 								</ul>
 							</div>
 							<input type="text">
-							<button type="submit" class="search">검색</button>
+							<button type="submit" class="search">
+								<span>검색</span>
+							</button>
 						</div>
 					</div>
+					<!-- //검색창 -->
+					<!-- 게시판(일반) 리스트 -->
+					<p class="guide_tit">게시판(일반) 리스트</p>
+					<div data-board-list>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="https://picsum.photos/300/200" alt="">
+									<div class="txt_wrap">
+										<p class="tit">2019년 아리시스의 새로운 도약</p>
+										<p class="txt">
+											현재도 미래에도 사람을 위한 기술발전은 계속진전될 것입니다. 그 발전의 결과물들을 기업내부에 쉽게 적용시키지 못하고 또한 기술 발전의 결과를 적용한다고
+											하더라도 아주 제한적인못하고 또한 기술 발전의 결과를 적용한다고 하더라도 아주 제한적인 활용으로 그치고 있는 것이 현실입니다. 활용으로 그치고 있는
+											것이 현실입니다.
+										</p>
+										<span class="time">19.08.08</span>
+									</div>
+								</a>
+							</li>
+							<!-- <li style="text-align:center; line-height:2.5em;">데이터가 존재하지 않습니다.</li> -->
+						</ul>
+					</div>
+					<!-- //게시판(일반) 리스트 -->
+					<!-- 게시판(갤러리) 리스트 -->
+					<p class="guide_tit">게시판(갤러리) 리스트</p>
+					<div data-board-list data-gallery>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="https://picsum.photos/380/240" alt="">
+									<div class="txt_wrap">
+										<p class="tit">2019년 아리시스의 새로운 도약</p>
+										<p class="txt">
+											현재도 미래에도 사람을 위한 기술발전은 계속진전될 것입니다. 그 발전의 결과물들을 기업내부에 쉽게 적용시키지 못하고 또한 기술 발전의 결과를 적용한다고
+											하더라도 아주 제한적인못하고 또한 기술 발전의 결과를 적용한다고 하더라도 아주 제한적인 활용으로 그치고 있는 것이 현실입니다. 활용으로 그치고 있는
+											것이 현실입니다.
+										</p>
+										<span class="time">19.08.08</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="https://picsum.photos/380/240" alt="">
+									<div class="txt_wrap">
+										<p class="tit">생명을 우리는 기관과 어디 피가 이상은 그들은 그들은 찾아 말이다.</p>
+										<p class="txt">
+											청춘은 영원히 현저하게 봄날의 사막이다. 고행을 뭇 힘차게 없으면 가진 피에 불어 같이, 쓸쓸하랴? 청춘이 원질이 공자는 눈에 있으랴? 날카로우나
+											방황하였으며, 우리의 있을 것이다.
+										</p>
+										<span class="time">19.08.08</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="https://picsum.photos/380/240" alt="">
+									<div class="txt_wrap">
+										<p class="tit">생명을 우리는 기관과 어디 피가 이상은 그들은 그들은 찾아 말이다.</p>
+										<p class="txt">
+											청춘은 영원히 현저하게 봄날의 사막이다. 고행을 뭇 힘차게 없으면 가진 피에 불어 같이, 쓸쓸하랴? 청춘이 원질이 공자는 눈에 있으랴? 날카로우나
+											방황하였으며, 우리의 있을 것이다.
+										</p>
+										<span class="time">19.08.08</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="https://picsum.photos/380/240" alt="">
+									<div class="txt_wrap">
+										<p class="tit">생명을 우리는 기관과 어디 피가 이상은 그들은 그들은 찾아 말이다.</p>
+										<p class="txt">
+											청춘은 영원히 현저하게 봄날의 사막이다. 고행을 뭇 힘차게 없으면 가진 피에 불어 같이, 쓸쓸하랴? 청춘이 원질이 공자는 눈에 있으랴? 날카로우나
+											방황하였으며, 우리의 있을 것이다.
+										</p>
+										<span class="time">19.08.08</span>
+									</div>
+								</a>
+							</li>
+							<!-- <li style="width:100%; padding:0; line-height:2.5em; text-align:center;">데이터가 존재하지 않습니다.</li> -->
+						</ul>
+					</div>
+					<!-- //게시판(갤러리) 리스트 -->
+					<!-- 페이징 -->
+					<p class="guide_tit">페이징</p>
+					<div data-paging>
+						<ul>
+							<li class="first btn"><a class="item" href="#">첫 페이지</a></li>
+							<li class="prev btn"><a class="item" href="#">이전 페이지</a></li>
+							<li class="active"><span class="item">1</span></li>
+							<li><a class="item" href="#">2</a></li>
+							<li><a class="item" href="#">3</a></li>
+							<li><a class="item" href="#">4</a></li>
+							<li><a class="item" href="#">5</a></li>
+							<li><a class="item" href="#">6</a></li>
+							<li><a class="item" href="#">7</a></li>
+							<li><a class="item" href="#">8</a></li>
+							<li><a class="item" href="#">9</a></li>
+							<li><a class="item" href="#">10</a></li>
+							<li class="next btn"><a class="item" href="#">다음 페이지</a></li>
+							<li class="last btn"><a class="item" href="#">마지막 페이지</a></li>
+						</ul>
+					</div>
+					<!-- //페이징 -->
+					<!-- 게시판(뷰) -->
+					<p class="guide_tit">게시판(뷰)</p>
+					<div data-board-view>
+						<div class="view_header">
+							<h3 class="tit">[창립기념] 2019년 ㈜아리시스 체육대회 FUN!FUN!FUN!</h3>
+							<ul class="info">
+								<li class="date">
+									<span>9999.99.99</span>
+								</li>
+								<li class="view">
+									<span>999,999</span>
+								</li>
+							</ul>
+						</div>
+						<div class="view_content" data-editor>
+							<!-- [D] 에디터 삽입 영역 -->
+							이 날은 창립 14주년을 기념함과 동시에 아리인이 모두 모여 체육행사를 즐기기로 약속된 날이었습니다.<br>
+							<br>
+							H&K컨설팅 관계자분들의 진행으로 오전에는 팀빌딩 게임, 오후에는 명랑 운동회가 진행되었는데요.<br>
+							<br>
+							오전 팀빌딩 게임에서는 4가지 게임 결과로 모은 자음/모음으로 상대팀원의 이름을 완성하여 탈락시키기 위한 치열한 눈치게임이 흥미로웠습니다.<br>
+							<br>
+							오후 명랑운동회에서는 비록 날씨는 명랑하지 못 하였지만, 열띤 응원과 함께 더욱 뜨거운 날씨를 만끽하였지요.<br>
+							<br>
+							무더운 날씨 속에서도 모두들 불타오르는 승부욕으로 최선을 다해 땀 흘려 주시는 모습에 깊이 감동받았습니다. ^^<br>
+							<br>
+							<img src="https://picsum.photos/1200/600" alt="">
+							<!-- [D] //에디터 삽입 영역 -->
+						</div>
+						<div class="single_paging">
+							<ul>
+								<li class="prev">
+									<a href="javascript:return false;">
+										<span>이전글</span>
+										<p class="txt">글이 없습니다.</p>
+									</a>
+								</li>
+								<li class="next">
+									<a href="#">
+										<span>다음글</span>
+										<p class="txt">
+											긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용
+											긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용 긴내용
+											긴내용 긴내용 긴내용
+										</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="list_btn">
+							<a href="#">
+								<div>
+									목록보기
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- //게시판(뷰) -->
+					<!-- 인포그래픽 -->
+					<p class="guide_tit">인포그래픽</p>
+					<div data-graphic>
+						<img src="../img/info/info_cc_01.png" alt="여기에 대체텍스트 적거나 hidden 클래스 준 div에 ir기법을 사용하여 접근성을 지켜주세요.">
+					</div>
+					<!-- //인포그래픽 -->
 				</div>
 			</div>
 			<!--  //서브 페이지 컨텐츠 -->

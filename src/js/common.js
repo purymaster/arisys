@@ -72,18 +72,42 @@ $(function () {
 	/******************** 슬라이드 제어 ********************/
 
 	/* 메인페이지 메인 슬라이드 */
-	var main_slide = $('.main_visual [data-slide]');
-
-	main_slide.slick({
+	$('.main_visual [data-slide]').slick({
 		arrows: false,
 		fade: true,
 		dots: true,
 		// dotsClass: "main_visual_dots",
-        speed: 1000,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        pauseOnFocus: false,
+		speed: 1000,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+	});
+
+	/* 메인페이지 포트폴리오 슬라이드 */
+	$('section.portfolio [data-slide]').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 599,
+				settings: {
+					slidesToShow: 2,
+				}
+			}
+		]
+	});
+
+	/* 메인페이지 블로그 슬라이드 */
+	$('section.blog [data-slide]').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
 	});
 
 	/******************** 스크롤 애니메이션 정의 ********************/

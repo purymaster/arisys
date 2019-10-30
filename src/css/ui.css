@@ -641,6 +641,9 @@ section .tit_wrap .sub_txt {margin-top:10px; font-family:"Nanum Square"; font-si
 	.main_visual [data-slide] .slide .tit {font-size:48px;}
 	.main_visual [data-slide] .slide .sub_txt {font-size:16px;}
 	.main_visual [data-slide] .slick-dots {left:50%; transform:translateX(-50%); bottom:100px;}
+	.main_visual [data-slide] .slick-dots li {width:15px; height:15px; margin-right:10px;}
+	.main_visual [data-slide] .slick-dots li button {width:15px; height:15px;}
+	.main_visual [data-slide] .slick-dots .slick-active button:after {width:175%; height:175%;}
 	.main_visual .slider .scroll {bottom:30px; transform:scale(0.75);}
 	.main_visual .slider .scroll:hover {bottom:20px;}
 }
@@ -739,7 +742,7 @@ section.portfolio [data-slide] .slick-next:before {right:20px; border-right:1px 
 @media (max-width:599px) {
 	section.portfolio [data-slide] .slide a {padding:15px;}
 	section.portfolio [data-slide] .slide img {margin-top:15px;}
-	section.portfolio [data-slide] .slick-arrow {transform:scale(0.5);}
+	/* section.portfolio [data-slide] .slick-arrow {transform:scale(0.5);} */
 }
 
 /* 블로그 */
@@ -808,9 +811,9 @@ section.blog .more:hover:after {background:#fff;}
 @media (max-width:599px) {
 	section.blog [data-slide] .txt_wrap .tit {height:auto; max-height:2.8em; font-size:16px;}
 	section.blog [data-slide] .txt_wrap .txt {height:auto; max-height:3em; font-size:12px;}
-	section.blog [data-slide] .slick-arrow {transform:scale(0.66);}
+	/* section.blog [data-slide] .slick-arrow {transform:scale(0.66);}
 	section.blog [data-slide] .slick-prev {transform-origin:left;}
-	section.blog [data-slide] .slick-next {transform-origin:right;}
+	section.blog [data-slide] .slick-next {transform-origin:right;} */
 	section.blog .more {width:100%; font-size:12px;}
 }
 

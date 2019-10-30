@@ -69,7 +69,22 @@ $(function () {
 			select_form.find('button').removeClass('on');
 	});
 
-	/******************** 슬라이드 제어 ********************/
+	/******************** 메인페이지 제어 ********************/
+
+	var header, position;
+
+	$(window).on('load resize', function () {
+		header = parseInt($('.header_wrap').css('height'));
+	})
+
+	/* 메인페이지 스크롤 버튼 */
+	$('.main_visual .scroll').on('click', function () {
+		position = $('section.solution').offset().top - header;
+		$('html,body').animate({
+			"scrollTop": position
+		}, 300);
+		return false;
+	});
 
 	/* 메인페이지 메인 슬라이드 */
 	$('.main_visual [data-slide]').slick({
@@ -108,6 +123,21 @@ $(function () {
 	$('section.blog [data-slide]').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 599,
+				settings: {
+					slidesToShow: 1,
+					adaptiveHeight: true
+				}
+			}
+		]
 	});
 
 	/******************** 스크롤 애니메이션 정의 ********************/

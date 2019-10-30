@@ -177,8 +177,7 @@ html {overflow-y:scroll; -webkit-font-smoothing:antialiased; -moz-osx-font-smoot
 
 @media (max-width:599px) {
 	.container {padding:0 15px;}
-	.move_top {right:15px; bottom:50px;}
-	.move_top.on {bottom:60px;}
+	.move_top {right:15px;}
 }
 
 /* 입력폼 */
@@ -635,7 +634,7 @@ section .tit_wrap .sub_txt {margin-top:10px; font-family:"Nanum Square"; font-si
 .main_visual [data-slide] .slick-dots li button { position:relative; width:10px; height:10px; border-radius:50%; background:#fff; text-indent:-9999px;}
 .main_visual [data-slide] .slick-dots li button:after {visibility:hidden; position:absolute; top:50%; left:50%; -webkit-box-sizing:border-box; box-sizing:border-box; width:100%; height:100%; border:1px solid #fff; border-radius:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0; content:"";}
 .main_visual [data-slide] .slick-dots .slick-active button:after {visibility:visible; width:250%; height:250%; opacity:1;}
-.main_visual .slider .scroll {position:absolute; bottom:50px; left:50%; width:40px; height:40px; margin-left:-20px; border:2px solid #fff; border-radius:50%; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
+.main_visual .slider .scroll {position:absolute; bottom:50px; left:50%; width:45px; height:45px; margin-left:-22px; border:2px solid #fff; border-radius:50%; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
 .main_visual .slider .scroll:hover {bottom:40px; border-color:#a6c742; background:#a6c742;}
 .main_visual .slider .scroll:before {position:absolute; top:50%; left:50%; width:7px; height:20px; margin-top:-14px; margin-left:-1px; border-bottom:1px solid #fff; border-left:1px solid #fff; -webkit-transform:skewY(-45deg); transform:skewY(-45deg); content:"";}
 
@@ -738,7 +737,7 @@ section.portfolio [data-slide] .slick-next:before {right:20px; border-right:1px 
 	section.portfolio [data-slide] .slide a {padding:30px 15px;}
 	section.portfolio [data-slide] .slide .cate {padding:0 15px; font-size:12px; line-height:1.8em;}
 	section.portfolio [data-slide] .slide img {margin-top:30px;}
-	section.portfolio [data-slide] .slick-arrow {background:#a6c742; -webkit-transform:scale(0.75); transform:scale(0.75); opacity:0.75;}
+	section.portfolio [data-slide] .slick-arrow {background:#a6c742; -webkit-transform:scale(0.75); transform:scale(0.75); opacity:0.5;}
 	section.portfolio [data-slide] .slick-prev {left:10px; -webkit-transform-origin:left; transform-origin:left;}
 	section.portfolio [data-slide] .slick-next {right:10px; -webkit-transform-origin:right; transform-origin:right;}
 }
@@ -750,27 +749,77 @@ section.portfolio [data-slide] .slick-next:before {right:20px; border-right:1px 
 }
 
 /* 블로그 */
-section.blog {background:#efefef; min-height:1000px; overflow-x:hidden;}
+section.blog {background:#efefef; min-height:630px; overflow-x:hidden;}
 section.blog:after {display:block; clear:both; content:"";}
 section.blog .box {float:left;}
-section.blog .box.tit {width:320px; height:290px; margin-right:40px; padding:40px 30px; background:#fff;}
-section.blog .box.slider {width:calc(100% - 360px);}
+section.blog .box.tit {width:320px; height:290px; margin-right:50px; padding:40px 30px; background:#fff;}
+section.blog .box.slider {width:calc(100% - 370px);}
 section.blog [data-slide] {position:absolute; width:990px;}
-section.blog .slide {width:330px !important; padding-right:30px;}
-section.blog .slide a {display:block; position:relative; font-size:0;}
-section.blog .slide a:before {visibility:hidden; position:absolute; top:0; left:0; -webkit-box-sizing:border-box; box-sizing:border-box; width:100%; height:100%; border:3px solid #a6c742; -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0; content:"";}
-section.blog .slide a:hover:before {visibility:visible; opacity:1;}
-section.blog .slide img {width:300px; max-width:300px;}
-section.blog .slide .txt_wrap {background:#fff; padding:20px; padding-bottom:30px;}
-section.blog .slide .txt_wrap .cate {display:block; font-size:14px; font-weight:700; line-height:2em; color:#a6c742;}
-section.blog .slide .txt_wrap .tit {font-size:24px; font-family:"Nanum Square"; line-height:1.4em; -webkit-transition:all 0.3s; transition:all 0.3s;}
-section.blog .slide a:hover .txt_wrap .tit {font-weight:700; color:#a6c742; text-decoration:underline;}
-section.blog .slide .txt_wrap .txt {margin-top:12px; font-size:16px; line-height:1.5em; color:#666;}
-section.blog .slide .time {display:inline-block; position:relative; margin-top:15px; padding-left:20px; font-size:14px; line-height:16px; color:#999;}
-section.blog .slide .time:before,
-section.blog .slide .time:after {position:absolute; content:"";}
-section.blog .slide .time:before {top:-1px; left:0; width:14px; height:14px; border:1px solid #999; border-radius:50%;}
-section.blog .slide .time:after {top:3px; left:7px; width:4px; height:4px; border-bottom:1px solid #999; border-left:1px solid #999; -webkit-transform:skewY(30deg); transform:skewY(30deg);}
+section.blog [data-slide] .slide {padding-right:30px;}
+section.blog [data-slide] a {display:block; position:relative; font-size:0;}
+section.blog [data-slide] a:before {visibility:hidden; position:absolute; top:0; left:0; -webkit-box-sizing:border-box; box-sizing:border-box; width:100%; height:100%; border:3px solid #a6c742; -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0; content:"";}
+section.blog [data-slide] a:hover:before {visibility:visible; opacity:1;}
+section.blog [data-slide] img {width:100%;}
+section.blog [data-slide] .txt_wrap {background:#fff; padding:20px; padding-bottom:30px;}
+section.blog [data-slide] .txt_wrap .cate {display:block; font-size:14px; font-weight:700; line-height:2em; color:#a6c742;}
+section.blog [data-slide] .txt_wrap .tit {overflow:hidden; height:2.8em; font-family:"Nanum Square"; font-size:24px; line-height:1.4em; -webkit-transition:all 0.3s; transition:all 0.3s;}
+section.blog [data-slide] a:hover .txt_wrap .tit {font-weight:700; color:#a6c742; text-decoration:underline;}
+section.blog [data-slide] .txt_wrap .txt {overflow:hidden; height:3em; margin-top:12px; font-size:16px; line-height:1.5em; color:#666;}
+section.blog [data-slide] .time {display:inline-block; position:relative; margin-top:15px; padding-left:20px; font-size:14px; line-height:16px; color:#999;}
+section.blog [data-slide] .time:before,
+section.blog [data-slide] .time:after {position:absolute; content:"";}
+section.blog [data-slide] .time:before {top:-1px; left:0; width:14px; height:14px; border:1px solid #999; border-radius:50%;}
+section.blog [data-slide] .time:after {top:3px; left:7px; width:4px; height:4px; border-bottom:1px solid #999; border-left:1px solid #999; -webkit-transform:skewY(30deg); transform:skewY(30deg);}
+section.blog [data-slide] .slick-arrow {position:absolute; top:335px; left:0; z-index:1; width:45px; height:45px; border:2px solid #999; border-radius:50%; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
+section.blog [data-slide] .slick-arrow:before {position:absolute; top:50%; width:24px; height:7px; margin-top:-8px; border-bottom:1px solid #999; -webkit-transition:all 0.3s; transition:all 0.3s; content:"";}
+section.blog [data-slide] .slick-arrow:hover,
+section.blog [data-slide] .slick-arrow:hover:before {border-color:#a6c742;}
+section.blog [data-slide] .slick-prev {left:-155px;}
+section.blog [data-slide] .slick-next {left:-100px;}
+section.blog [data-slide] .slick-prev:before {left:11px; border-left:1px solid #999; -webkit-transform:skewX(-45deg); transform:skewX(-45deg);}
+section.blog [data-slide] .slick-next:before {right:11px; border-right:1px solid #999; -webkit-transform:skewX(45deg); transform:skewX(45deg);}
+section.blog .more {position:absolute; top:200px; left:60px; width:45px; height:45px; border:2px solid #333; border-radius:50%; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
+section.blog .more:hover {border-color:#a6c742; background:#a6c742;}
+section.blog .more:before,
+section.blog .more:after {position:absolute; top:22px; left:22px; width:19px; height:1px; margin-top:-2px; margin-left:-11px; background:#333; -webkit-transition:all 0.3s; transition:all 0.3s; content:"";}
+section.blog .more:after {-webkit-transform:rotate(90deg);transform:rotate(90deg);}
+section.blog .more:hover {background:#a6c742; border-color:#a6c742;}
+section.blog .more:hover:before,
+section.blog .more:hover:after {background:#fff;}
+
+@media (max-width:1024px) {
+	section.blog {min-height:0;}
+	section.blog .box {float:none;}
+	section.blog .box.tit {width:auto; height:auto; margin:0; padding:0; background:none;}
+	section.blog .box.slider {width:100%; margin-top:30px;}
+	section.blog [data-slide] {position:relative; left:-15px; width:calc(100% + 30px);}
+	section.blog [data-slide] .slide {padding:0 15px;}
+	section.blog [data-slide] .txt_wrap {padding:15px;}
+	section.blog [data-slide] .txt_wrap .cate {font-size:12px;}
+	section.blog [data-slide] .txt_wrap .tit {font-size:18px;}
+	section.blog [data-slide] .txt_wrap .txt {margin-top:10px; font-size:14px;}
+	section.blog [data-slide] .time {margin-top:10px; font-size:12px;}
+	section.blog [data-slide] .slick-arrow {top:50%; margin-top:-22px; border:0; background:#a6c742; opacity:0.5;}
+	section.blog [data-slide] .slick-arrow:before {border-color:#fff !important; top:23px;}
+	section.blog [data-slide] .slick-prev {left:15px;}
+	section.blog [data-slide] .slick-next {right:15px; left:auto;}
+	section.blog [data-slide] .slick-prev:before {left:14px;}
+	section.blog [data-slide] .slick-next:before {right:14px;}
+	section.blog .more {display:block; position:static; width:120px; height:auto; margin:30px auto 0; border-width:1px; border-radius:0; font-family:"Nanum Square"; font-weight:700; line-height:2em; text-align:center; text-indent:0;}
+	section.blog .more:before,
+	section.blog .more:after {display:none;}
+	section.blog .more:hover {color:#fff;}
+}
+
+@media (max-width:599px) {
+	section.blog [data-slide] .txt_wrap .tit {height:auto; max-height:2.8em; font-size:16px;}
+	section.blog [data-slide] .txt_wrap .txt {height:auto; max-height:3em; font-size:12px;}
+	section.blog [data-slide] .slick-arrow {-webkit-transform:scale(0.66);transform:scale(0.66);}
+	section.blog [data-slide] .slick-prev {-webkit-transform-origin:left;transform-origin:left;}
+	section.blog [data-slide] .slick-next {-webkit-transform-origin:right;transform-origin:right;}
+	section.blog .more {width:100%; font-size:12px;}
+}
+
 /*=========================================================
 9. 서브 페이지 스타일
 =========================================================*/

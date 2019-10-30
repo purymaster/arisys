@@ -1,0 +1,82 @@
+@@include('header.html')
+<div class="content">
+	@@include('sub_visual.html', {
+	"type" : "type2",
+	"sub_tit" : "SOLUTIONS",
+	"tit" : "솔루션 소개"
+	})
+
+	<!--  서브 페이지 컨텐츠 -->
+	<div class="" data-sub-content>
+		<div class="container">
+
+			@@include('tab.html', {
+			"has_tab" : true,
+			"tab_list" : ["CC", "UC", "영상회의", "SI", "CLOUD", "부가 솔루션"],
+			"type" : "type6"
+			})
+
+			<div data-content-box>
+				<div data-solution>
+					<div class="solution_header">
+						<h3 class="cont_tit">Contact Center</h3>
+						<p class="sub_txt">
+							컨택 센터는 음성통신을 기반으로 고객서비스 및 <br>
+							영업활동이 가능한 커뮤니케이션 시스템입니다.
+						</p>
+					</div>
+					<div class="solution_content">
+						<img src="../img/img/img_cc.png" alt="">
+						<div class="txt_wrap">
+							<p>
+								컨택 센터란 음성통신을 기반으로 대고객서비스 및 영업활동이 가능한 커뮤니케이션 시스템입니다.
+								전통적인 컨택 센터는 고객의 인바운드 콜을 처리하는 능력을 극대화 시키는 것이 주요 목적으로 운영되었다면, 오늘날의 컨택센터는 단순 음성 서비스 중심에서
+								벗어나 이메일/채팅/웹서비스/소셜미디어/AI(인공지능) 등과 같은 다양한 옴니채널들의 확대와 통합을 통해 고객과의 접점을 늘려 다양한 정보와 서비스 등을
+								제공하고자 합니다.
+								이를 통해 고객의 로열티를 향상시켜 새로운 영업기회를 창출하고. 상담데이터를 최적화 한 자원활용으로 콜센터 운영비용을 최소화 시킬 수 있는 고객 경험관리
+								센터로 진화하고 있습니다.
+							</p>
+							<p>
+								오늘날 고객은 자동화된 음성서비스 뿐만 아니라 이메일, SMS , 온라인 채팅, 웹 RTC, 소셜미디어(SNS), 챗봇/AI 등과 같은 최신의 멀티미디어를
+								지원하는 옴니채널로 그들이 사용하고 신뢰하는 커뮤니케이션 도구들을 통해 24시간 커뮤니케이션 및 서비스 해결을 원하고 있습니다.
+							</p>
+							<p class="key_txt empas">
+								아리시스는 컨택센터 솔루션 시장에서 업계의 선두주자일 뿐만 아니라 오늘날 시장에서 가장 우수한 밴더들과 파트너쉽 관계를 맺고 있습니다.
+							</p>
+							<p>
+								Avaya의 IC(Interaction Center), EMC(Elite Multi-Channel), AACC(Avaya Aura Contact
+								Center), 완전한 옴니채널을 지원하는 Oceana, AAEP(Avaya Aura Experienced Portal) 등의 컨택센터 솔루션과
+								Genesys의 컨택센터 솔루션(PureEngagement, GVP, Analytics 등) 등을 통해서 아리시스는 이메일, SMS, 온라인 채팅, 그리고
+								다양한 SNS 채널과 같은 커뮤니케이션 도구들을 제공하여 고객이 보다 역동적인 서비스 방법을 경험할 수 있도록 도와줄 수 있습니다. 또한 고객에게 더 나은
+								데이터 분석기능과 최신 고객 지원시스템으로 더 나은 만족을 누릴 수 있도록 다양한 컨택센터 솔루션에 대한 진단 및 컨설팅 서비스, 시스템 구축, 시스템
+								운영관리 서비스와 같은 토탈 서비스를 제공합니다.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div data-graphic>
+					<img src="../img/info/info_cc_01.png" alt="">
+					<div class="hidden">
+						HOSTED CONTACT CENTER
+						<ul>
+							<li>SMS</li>
+							<li>CHAT</li>
+							<li>IVR</li>
+							<li>INTEGRATION AND COMPLIANCE</li>
+							<li>24/7 SUPPORT</li>
+							<li>REPORTING</li>
+							<li>RECORDING</li>
+							<li>DIALLER</li>
+							<li>EMAIL</li>
+							<li>VOICE</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

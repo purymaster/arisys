@@ -1,0 +1,54 @@
+@@include('header.html')
+<div class="content">
+	@@include('sub_visual.html', {
+	"type" : "type2",
+	"sub_tit" : "SOLUTIONS",
+	"tit" : "솔루션 소개"
+	})
+
+	<!--  서브 페이지 컨텐츠 -->
+	<div class="" data-sub-content>
+		<div class="container">
+
+			@@include('tab.html', {
+			"has_tab" : true,
+			"tab_list" : ["CC", "UC", "영상회의", "SI", "CLOUD", "부가 솔루션"],
+			"type" : "type6"
+			})
+
+			<div data-content-box>
+				<div data-solution>
+					<div class="solution_header">
+						<h3 class="cont_tit">Video Conference</h3>
+						<p class="sub_txt">
+							화상 회의는 둘 이상의 위치에서 양방향 비디오 및 오디오 전송을 <br>
+							동시에 주고받게 하는 대화식 전기통신 기술의 집합입니다.
+						</p>
+					</div>
+					<div class="solution_content">
+						<img class="full" src="../img/img/img_video.png" alt="">
+						<div class="txt_wrap">
+							<p>
+								화상회의 솔루션은 먼 거리에서도 현실감 있는 회의환경을 제공함으로써 기업 내에 협업 및 참여를 용이하게 도와 줄 수 있을 뿐만 아니라 시간과 비용을 절감하여
+								업무의 효율성을 크게 증가시키는 가치를 제공합니다.
+							</p>
+							<p class="key_txt empas">
+								아리시스는 Avaya 사와 파트너쉽을 맺고, Avaya Equinox Scopia 등의 Video 솔루션을 제공합니다.
+							</p>
+							<p>
+								Avaya Equinox Scopia 는 소프트웨어 MCU, 비디오 코덱장치, BYOD 태블릿, 모바일 또는 데스크탑과 같은 모든 장치에서 신뢰성을 보장받을
+								수 있는 끊김 없는 커뮤니케이션을 제공하여 참석자의 효과적이고 신속한 의사결정을 통해 기업의 효율적이고 안정적인 운영을 지원할 수 있습니다.
+								아리시스는 고객이 필요로 하는 화상회의와 관련된 최적의 솔루션과 장비에 대한 컨설팅 서비스 및 구축지원, 그리고 Video 솔루션에 대한 운영관리 서비스를
+								제공합니다.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

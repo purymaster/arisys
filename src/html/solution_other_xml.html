@@ -1,0 +1,60 @@
+@@include('header.html')
+<div class="content">
+	@@include('sub_visual.html', {
+	"type" : "type2",
+	"sub_tit" : "SOLUTIONS",
+	"tit" : "솔루션 소개"
+	})
+
+	<!--  서브 페이지 컨텐츠 -->
+	<div class="" data-sub-content>
+		<div class="container">
+
+			@@include('tab.html', {
+			"has_tab" : true,
+			"tab_list" : ["CC", "UC", "영상회의", "SI", "CLOUD", "부가 솔루션"],
+			"type" : "type6"
+			})
+
+			<div data-content-box>
+				<div data-solution class="other">
+					<div class="solution_tab">
+						<ul>
+							<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+							<li><a href="#"><span>Alkom-Ring</span></a></li>
+							<li><a href="#"><span>Alkom-XML</span></a></li>
+							<li><a href="#"><span>ACS100</span></a></li>
+							<li><a href="#"><span>AAD100</span></a></li>
+							<li><a href="#"><span>ASIC100</span></a></li>
+						</ul>
+					</div>
+					<div class="solution_content">
+						<div class="tit_wrap">
+							<span class="tit">Alkom-XML(이미지 발신자표시 전송) 솔루션</span>
+						</div>
+						<div class="txt_wrap">
+							<p>
+								이미지발신자표시(Multi-media Caller ID Display) 전송솔루션은 IP 전화기의 디스플레이 창에 전화 발신자의 전화번호가 나타나게 하는 것
+								뿐만 아니라 전화를 발신한 사람의 사진이미지 및 조직정보 등 다양한 정보를 표시해서 시각화시켜주는 교환기의 부가솔루션입니다.
+							</p>
+							<p>
+								Alkom-XML 솔루션은 Avaya IP 교환기와 연동하여 IP 전화기의 디스플레이 화면을 통해서 이미지 발신자정보(사진, 조직소속정보 등)를 표시하고,
+								전화기의 스크린세이버 기능을 통한 본인정보 표시, 회사 조직도와 연계하여 Click-to-Dial/Call 기능, 공지사항 표시 등을 구현할 수 있는
+								솔루션입니다.
+							</p>
+						</div>
+					</div>
+					<div class="solution_info">
+						<div data-graphic>
+							<img src="../img/info/info_xml_01.png" alt="솔루션 안내는 유선상으로 문의바랍니다. 080-858-8119">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

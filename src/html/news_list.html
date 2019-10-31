@@ -9,6 +9,20 @@
 	<!--  서브 페이지 컨텐츠 -->
 	<div class="" data-sub-content>
 		<div class="container">
+			<div data-search-box>
+				<div class="search_wrap">
+					@@include('select.html', {
+					"context" : {
+					"use" : true,
+					"value" : ["제목", "작성자", "내용"]
+					}
+					})
+					<input type="text">
+					<button type="submit" class="search">
+						<span>검색</span>
+					</button>
+				</div>
+			</div>
 			<div data-board-list>
 				<ul>
 					<li>

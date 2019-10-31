@@ -1,0 +1,61 @@
+@@include('header.html')
+<div class="content">
+	@@include('sub_visual.html', {
+	"type" : "type2",
+	"sub_tit" : "SOLUTIONS",
+	"tit" : "솔루션 소개"
+	})
+
+	<!--  서브 페이지 컨텐츠 -->
+	<div class="" data-sub-content>
+		<div class="container">
+
+			@@include('tab.html', {
+			"has_tab" : true,
+			"tab_list" : ["CC", "UC", "영상회의", "SI", "CLOUD", "부가 솔루션"],
+			"type" : "type6"
+			})
+
+			<div data-content-box>
+				<div data-solution class="other">
+					<div class="solution_tab">
+						<ul>
+							<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+							<li><a href="#"><span>Alkom-Ring</span></a></li>
+							<li><a href="#"><span>Alkom-XML</span></a></li>
+							<li><a href="#"><span>ACS100</span></a></li>
+							<li><a href="#"><span>AAD100</span></a></li>
+							<li><a href="#"><span>ASIC100</span></a></li>
+						</ul>
+					</div>
+					<div class="solution_content">
+						<div class="tit_wrap">
+							<span class="tit">Alkom-Ring(IP-컬러링) 솔루션</span>
+						</div>
+						<div class="txt_wrap">
+							<p>
+								컬러링 솔루션은 발신자가 특정 기업이나 공공기관에 전화할 때 통화 연결시까지 듣게 되는 단순한 기계음 대신에 음악이나 안내멘트, 자연의 소리 등 다양한 소리로
+								바꿔 줌으로써 전화 거는 사람이 지루함 없이 즐겁게 기다리게 해 줄 수 있는 부가 솔루션입니다.
+							</p>
+							<p>
+								Alkom-Ring(IP 기반 컬러링 솔루션)은 IP 교환기로 들어오는 인바운드 콜에 대해 전화 발신자에게 일반적인 안내/홍보멘트 및 음악, 또는 고객사의
+								각종 행사이벤트 등 정보를 안내함으로써 대고객 서비스 만족도를 향상할 수 있도록 하는 솔루션으로, 기존 컬러링 솔루션이 TDM 기반으로 하드웨어간 연동하는
+								것과 달리 순수 IP 기반에서 IP 교환기와 연동하는 차별화된 솔루션입니다.
+							</p>
+						</div>
+					</div>
+					<div class="solution_info">
+						<div data-graphic>
+							<img src="../img/info/info_ring_01.png"
+								alt="솔루션 안내는 유선상으로 문의바랍니다. 080-858-8119">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--  //서브 페이지 컨텐츠 -->
+
+</div>
+@@include('footer.html')

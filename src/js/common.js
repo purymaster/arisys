@@ -140,6 +140,14 @@ $(function () {
 		]
 	});
 
+	/******************** 솔루션 탭메뉴 제어 ********************/
+	
+	$('[data-tab-menu] a,.solution_tab a').on('click', function (e) {
+		e.preventDefault();
+		$(this).parent().addClass('on').siblings().removeClass('on');
+		$($(this).attr('href')).show().siblings('.tab_content').hide();
+	});
+
 	/******************** 스크롤 애니메이션 정의 ********************/
 
 	var move_el = $('[data-animation]'), //무빙 요소

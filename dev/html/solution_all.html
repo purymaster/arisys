@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ARISYS</title>
+	<link rel="stylesheet" href="../css/ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+<body>
+	<!--[if lte IE 8]>
+	<div class="ie9">
+		<div class="inner">
+			<p>
+				본 사이트는 인터넷 익스플로러9 버전 이상의 최신 브라우저에 최적화되어있습니다. 최신 브라우저로 업데이트해주시길 바랍니다.
+			</p>
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/"
+				target="_blank" title="새창열림">인터넷 익스플로러 업데이트</a>
+		</div>
+		<button type="button">안내창 닫기</button>
+	</div>
+	<![endif]-->
+	<div class="wrap">
+		<div class="header_wrap">
+			<header>
+				<div class="container">
+					<h1>
+						<a href="#">
+							<img src="../img/img/img_logo.png" alt="ARISYS">
+						</a>
+					</h1>
+					<button type="button" class="mobile open_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+						모바일 메뉴 열기
+					</button>
+					<div class="nav_wrap">
+						<nav>
+							<ul class="main-menu">
+								<li>
+									<a href="#">ABOUT ARISYS</a>
+									<ul class="sub-menu">
+										<li><a href="#">미션&amp;비전</a></li>
+										<li><a href="#">기업개요 및 조직도</a></li>
+										<li><a href="#">주요연혁</a></li>
+										<li><a href="#">파트너쉽</a></li>
+										<li><a href="#">고객사</a></li>
+										<li><a href="#">오시는길</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">SOLUTIONS</a>
+									<ul class="sub-menu">
+										<li><a href="#">솔루션 소개</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">PORTFOLIO</a>
+									<ul class="sub-menu">
+										<li><a href="#">사례선정 1</a></li>
+										<li><a href="#">사례선정 2</a></li>
+										<li><a href="#">사례선정 3</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">BLOG</a>
+									<ul class="sub-menu">
+										<li><a href="#">아리뉴스</a></li>
+										<li><a href="#">아리문화</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">RECRUIT</a>
+									<ul class="sub-menu">
+										<li><a href="#">인재상</a></li>
+										<li><a href="#">모집분야</a></li>
+									</ul>
+								</li>
+							</ul>
+							<button type="button" class="mobile close_menu">모바일 메뉴 닫기</button>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="content">
+			<div data-sub-visual class=type2 data-animation>
+				<div class="container">
+					<div class="visual_wrap">
+						<span class="sub_tit" data-animation="fadeInUp" data-delay="0">SOLUTIONS</span>
+						<h2 class="tit" data-animation="fadeInUp" data-delay="3">솔루션 소개</h2>
+						<div class="breadcrumb">
+							<ol>
+								<li class="home">
+									<a href="#">홈</a>
+								</li>
+								<li>
+									<div class="select_form">
+										<input type="hidden">
+										<button type="button"><span>1뎁스 메뉴1</span></button>
+										<ul>
+											<li><a href="#none">1뎁스 메뉴1</a></li>
+											<li><a href="#none">1뎁스 메뉴2</a></li>
+											<li><a href="#none">1뎁스 메뉴3</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="select_form">
+										<input type="hidden">
+										<button type="button"><span>2뎁스 메뉴1</span></button>
+										<ul>
+											<li><a href="#none">2뎁스 메뉴1</a></li>
+											<li><a href="#none">2뎁스 메뉴2</a></li>
+											<li><a href="#none">2뎁스 메뉴3</a></li>
+										</ul>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  서브 페이지 컨텐츠 -->
+			<div class="" data-sub-content>
+				<div class="container">
+					<!-- 탭메뉴 -->
+					<div data-tab-menu>
+						<ul class="type6">
+							<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+							<li>
+								<a href=#cc>
+									<span>CC</span>
+								</a>
+							</li>
+							<li>
+								<a href=#uc>
+									<span>UC</span>
+								</a>
+							</li>
+							<li>
+								<a href=#video>
+									<span>영상회의</span>
+								</a>
+							</li>
+							<li>
+								<a href=#si>
+									<span>SI</span>
+								</a>
+							</li>
+							<li>
+								<a href=#cloud>
+									<span>CLOUD</span>
+								</a>
+							</li>
+							<li>
+								<a href=#other>
+									<span>부가 솔루션</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //탭메뉴 -->
+					<!-- CC -->
+					<div id="cc" class="tab_content">
+						<div data-content-box>
+							<div data-solution>
+								<div class="solution_header">
+									<h3 class="cont_tit">Contact Center</h3>
+									<p class="sub_txt">
+										컨택 센터는 음성통신을 기반으로 고객서비스 및 <br>
+										영업활동이 가능한 커뮤니케이션 시스템입니다.
+									</p>
+								</div>
+								<div class="solution_content">
+									<img src="../img/img/img_cc.png" alt="">
+									<div class="txt_wrap">
+										<p>
+											컨택 센터란 음성통신을 기반으로 대고객서비스 및 영업활동이 가능한 커뮤니케이션 시스템입니다.
+											전통적인 컨택 센터는 고객의 인바운드 콜을 처리하는 능력을 극대화 시키는 것이 주요 목적으로 운영되었다면, 오늘날의 컨택센터는 단순 음성 서비스
+											중심에서
+											벗어나 이메일/채팅/웹서비스/소셜미디어/AI(인공지능) 등과 같은 다양한 옴니채널들의 확대와 통합을 통해 고객과의 접점을 늘려 다양한 정보와 서비스
+											등을
+											제공하고자 합니다.
+											이를 통해 고객의 로열티를 향상시켜 새로운 영업기회를 창출하고. 상담데이터를 최적화 한 자원활용으로 콜센터 운영비용을 최소화 시킬 수 있는 고객
+											경험관리
+											센터로 진화하고 있습니다.
+										</p>
+										<p>
+											오늘날 고객은 자동화된 음성서비스 뿐만 아니라 이메일, SMS , 온라인 채팅, 웹 RTC, 소셜미디어(SNS), 챗봇/AI 등과 같은 최신의
+											멀티미디어를
+											지원하는 옴니채널로 그들이 사용하고 신뢰하는 커뮤니케이션 도구들을 통해 24시간 커뮤니케이션 및 서비스 해결을 원하고 있습니다.
+										</p>
+										<p class="key_txt empas">
+											아리시스는 컨택센터 솔루션 시장에서 업계의 선두주자일 뿐만 아니라 <br>
+											오늘날 시장에서 가장 우수한 밴더들과 파트너쉽 관계를 맺고 있습니다.
+										</p>
+										<p>
+											Avaya의 IC(Interaction Center), EMC(Elite Multi-Channel), AACC(Avaya Aura Contact
+											Center), 완전한 옴니채널을 지원하는 Oceana, AAEP(Avaya Aura Experienced Portal) 등의 컨택센터 솔루션과
+											Genesys의 컨택센터 솔루션(PureEngagement, GVP, Analytics 등) 등을 통해서 아리시스는 이메일, SMS, 온라인 채팅,
+											그리고
+											다양한 SNS 채널과 같은 커뮤니케이션 도구들을 제공하여 고객이 보다 역동적인 서비스 방법을 경험할 수 있도록 도와줄 수 있습니다. 또한 고객에게 더
+											나은
+											데이터 분석기능과 최신 고객 지원시스템으로 더 나은 만족을 누릴 수 있도록 다양한 컨택센터 솔루션에 대한 진단 및 컨설팅 서비스, 시스템 구축, 시스템
+											운영관리 서비스와 같은 토탈 서비스를 제공합니다.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div data-graphic>
+								<img src="../img/info/info_cc_01.png" alt="">
+								<div class="hidden">
+									HOSTED CONTACT CENTER
+									<ul>
+										<li>SMS</li>
+										<li>CHAT</li>
+										<li>IVR</li>
+										<li>INTEGRATION AND COMPLIANCE</li>
+										<li>24/7 SUPPORT</li>
+										<li>REPORTING</li>
+										<li>RECORDING</li>
+										<li>DIALLER</li>
+										<li>EMAIL</li>
+										<li>VOICE</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //CC -->
+					<!-- UC -->
+					<div id="uc" class="tab_content" style="display:none;">
+						<div data-content-box>
+							<div data-solution>
+								<div class="solution_header">
+									<h3 class="cont_tit">Unified Communication</h3>
+									<p class="sub_txt">
+										기업의 커뮤니케이션을 위한 기반시스템으로 다양한 유무선 채널을 통합하여 <br>
+										기업 구성원간의 커뮤니케이션을 보다 효율적으로 하기 위한 수단입니다.
+									</p>
+								</div>
+								<div class="solution_content">
+									<img src="../img/img/img_uc.png" alt="">
+									<div class="txt_wrap">
+										<p>
+											UC(Unified Communication) 시스템은 기업 내의 커뮤니케이션을 위한 기반시스템으로 초기에는 다양한 유무선 채널을 통합하여 기업 구성원
+											간의
+											커뮤니케이션을 보다 효율적으로 하기 위한 수단이었습니다.
+										</p>
+										<p>
+											그러나 오늘날 UC 시스템은 기업의 업무환경 변화를 통해 기업내부의 축적된 지식을 활용하고, 시간과 장소에 구애 받지 않는 협업을 통하여 기업의 가치를
+											향상시키는 것을 목적으로 하며, 기업의 비즈니스 프로세스를 지원하기 위한 시스템으로 발전하여 시간과 장소의 제약이 없는 근무환경을 구축하는 스마트워크
+											시장으로
+											발전하고 있습니다.
+											이제 기업들은 신뢰할 수 있는, 안전하며 확장 가능한 플랫폼에서 자신들의 서비스와 커뮤니케이션을 차별화해야 합니다.
+										</p>
+										<p class="key_txt">
+											아리시스는 세계적인 UC 솔루션 업체인 Avaya사와 파트너쉽을 맺고 있습니다.
+										</p>
+										<p>
+											아리시스의 전문가 그룹은 맞춤 음성, 데이터 또는 비디오 커뮤니케이션 시스템을 통합하여 제공하고, 직원 및 파트너 그리고 고객과 같이 비즈니스에 가장
+											중요한
+											사람들과 연결되도록 지원합니다. 아리시스는 당신이 중요한 관계를 유지하고 강화하는데 도움이 되는 효율적이고 개인적인 접촉을 통해 경쟁 우위를 얻을 수
+											있도록
+											도와줄 수 있습니다. 아리시스는 기업의 환경에 최적한 다양한 UC 관련 솔루션에 진단 및 컨설팅서비스, 그리고 시스템 구축 및 시스템 운영서비스에 대한
+											전문적인 서비스를 제공합니다.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div data-graphic>
+								<img src="../img/info/info_uc_01.png" alt="">
+								<div class="hidden">
+									UNIFIED COMMUNICATION
+									<ul>
+										<li>EMAIL</li>
+										<li>VIDEO</li>
+										<li>VOICE</li>
+										<li>DATA</li>
+										<li>MOBILITY</li>
+										<li>DIRECTORY SERVICE</li>
+										<li>PRESENCE</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //UC -->
+					<!-- 영상회의 -->
+					<div id="video" class="tab_content" style="display:none;">
+						<div data-content-box>
+							<div data-solution>
+								<div class="solution_header">
+									<h3 class="cont_tit">Video Conference</h3>
+									<p class="sub_txt">
+										화상 회의는 둘 이상의 위치에서 양방향 비디오 및 오디오 전송을 <br>
+										동시에 주고받게 하는 대화식 전기통신 기술의 집합입니다.
+									</p>
+								</div>
+								<div class="solution_content">
+									<img class="full" src="../img/img/img_video.png" alt="">
+									<div class="txt_wrap">
+										<p>
+											화상회의 솔루션은 먼 거리에서도 현실감 있는 회의환경을 제공함으로써 기업 내에 협업 및 참여를 용이하게 도와 줄 수 있을 뿐만 아니라 시간과 비용을
+											절감하여
+											업무의 효율성을 크게 증가시키는 가치를 제공합니다.
+										</p>
+										<p class="key_txt empas">
+											아리시스는 Avaya 사와 파트너쉽을 맺고, Avaya Equinox Scopia 등의 <br>
+											Video 솔루션을 제공합니다.
+										</p>
+										<p>
+											Avaya Equinox Scopia 는 소프트웨어 MCU, 비디오 코덱장치, BYOD 태블릿, 모바일 또는 데스크탑과 같은 모든 장치에서 신뢰성을
+											보장받을
+											수 있는 끊김 없는 커뮤니케이션을 제공하여 참석자의 효과적이고 신속한 의사결정을 통해 기업의 효율적이고 안정적인 운영을 지원할 수 있습니다.
+											아리시스는 고객이 필요로 하는 화상회의와 관련된 최적의 솔루션과 장비에 대한 컨설팅 서비스 및 구축지원, 그리고 Video 솔루션에 대한 운영관리
+											서비스를
+											제공합니다.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //영상회의 -->
+					<!-- SI -->
+					<div id="si" class="tab_content" style="display:none;">
+						<div data-content-box>
+							<div data-solution>
+								<div class="solution_header">
+									<h3 class="cont_tit">System Integrationm</h3>
+									<p class="sub_txt">
+										아리시스의 시스템 통합(SI) 서비스는 본사, 국내외 지점의 CC, UC, Networking, Video의 문제점을 진단하여 최적의 통합 방안에 대한 컨설팅
+										서비스를 제공합니다.
+									</p>
+								</div>
+								<div class="solution_content">
+									<img src="../img/img/img_si.png" alt="">
+									<div class="txt_wrap">
+										<p>
+											아리시스의 시스템통합(SI) 서비스는 본사, 국내외 지점의 CC, UC, Networking, Video 의 요구 사항을 진단하여 최적의 통합 방안에
+											대한
+											컨설팅 서비스를 통해서 내부 ERP, CRM, Web, Mobile App. 까지 One-STOP Communication 으로 통합합니다.
+										</p>
+										<p>
+											아리시스의 시스템통합(SI) 비즈니스는 조직 인프라 프로젝트의 크기와 규모에 관계없이 모든 비즈니스 요구 사항을 충족 할 수 있으며, 공통 구성 요소를
+											결합하고 고객의 요구사항에 맞게 맞춤형 시스템통합(SI) 보장합니다.
+										</p>
+										<p>
+											아리시스는 클라우드 기반의 컴퓨팅 및 보안과 같은 아웃소싱 서비스 및 특별한 요구 사항을 지닌 시스템 통합에 이르기까지 풍부한 IT 경험과 지식을
+											활용하여
+											다양한 고객의 요구에 부응하여 전체 IT 시스템의 구조조정을 지원합니다. 그리고 아리시스는 IT 전문가 그룹을 통해 조직을 개선하고, 운영을 개혁하며,
+											IT
+											시스템의 최적화 및 보안 조치를 구현하는데 도움을 줄 수 있습니다.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div data-graphic>
+								<img src="../img/info/info_si_01.png" alt="">
+								<div class="hidden">
+									SYSTEM INTEGRAIONM
+									<ul>
+										<li>CONSULTANCY CAPTURE REQUIRMENTS</li>
+										<li>PLAN AND DESIGN</li>
+										<li>IMPLEMENTATION</li>
+										<li>VALIDATE PERFORMANCE</li>
+										<li>SUPPORT</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //SI -->
+					<!-- CLOUD -->
+					<div id="cloud" class="tab_content" style="display:none;">
+						<div data-content-box>
+							<div data-solution>
+								<div class="solution_header">
+									<h3 class="cont_tit">Cloud</h3>
+									<p class="sub_txt">
+										다양한 클라우드 채택모델, 솔루션 및 공급 업체뿐만 아니라<br>
+										기업이 긍정적인 비즈니스 성과를 달성할 수 있게 도와드립니다.
+									</p>
+								</div>
+								<div class="solution_content">
+									<img src="../img/img/img_cloud.png" alt="">
+									<div class="txt_wrap">
+										<p>
+											중소형 컨택센터를 운영하는 기업에서 자체적인 시스템을 구축 하는 데는 초기에 많은 비용이 소요됩니다. 규모는 작지만 다양한 솔루션을 이용하여 효과적인
+											컨택센터를 운영할 수 있도록 하기 위해 클라우드형 컨택센터 도입이 점점 요구되고 있습니다.
+										</p>
+										<p>
+											여러 공급업체에 독립적인 컨설팅 방식을 사용하는 아리시스는 다양한 클라우드 모델, 솔루션을 제공하여 기업이 긍정적인 비즈니스 성과를 달성할 수 있도록
+											지원합니다.
+										</p>
+										<p>
+											아리시스는 컨텍센터 솔루션 시장에서 업계를 리딩하고 있는 밴더사인 Avaya 및 Genesys 사와 파트너쉽 관계를 맺고 다양한 형태의 클라우드 서비스
+											모델을 제공하고 있으며, 아리시스 자체의 클라우드 모델인 구축형 ASP 모델도 제공하고 있습니다. 그리고 Avaya에서 제공하고 있는 화상회의 솔루션에
+											대한 클라우드 서비스 모델도 제공하고 있습니다.
+										</p>
+										<p class="key_txt">
+											아리시스는 모든 주요 클라우드 채용모델 (Public, Private, Hybrid) 및 자체 ASP(Application Service
+											Provider) 모델에 대한 지침을 제공하여 귀사의 요구사항에 맞는 접근 방식을 선택할 수 있도록 지원합니다.
+										</p>
+										<p>
+											또한 아리시스는 인프라에서 애플리케이션 및 그 중간에 있는 모든 IT 스택에 걸쳐 최상위 클라우드 제공업체의 솔루션에 대한 전문 지식을 제공하여 최첨단
+											기술에 대한 액세스를 보장합니다.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div data-graphic>
+								<img src="../img/info/info_cloud_01.png" alt="">
+								<div class="hidden">
+									Omni Channel
+									<ul>
+										<li>IVR</li>
+										<li>Phone</li>
+										<li>Web</li>
+										<li>Email</li>
+										<li>Chat</li>
+										<li>SMS</li>
+										<li>Social</li>
+										<li>Video</li>
+										<li>Skype</li>
+									</ul>
+									CALL CENTER CLOUD PLATFORM
+									<ul>
+										<li>IVR</li>
+										<li>Multi-Media</li>
+										<li>ACD</li>
+										<li>Auto Dialer</li>
+										<li>Agents</li>
+										<li>Voice and Screen Recording</li>
+										<li>Agents Scripting</li>
+										<li>CRM Ingrations</li>
+										<li>HIstorical and Real Time Report</li>
+										<li>API for Mobile</li>
+										<li>Speech Analytics</li>
+										<li>Workforce Management</li>
+									</ul>
+									Agents Supervisors and Self Service
+									<ul>
+										<li>Home - Based - Agents</li>
+										<li>In - House - Agents</li>
+										<li>Offshore Agents</li>
+										<li>Supervisor</li>
+										<li>Self Service</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //CLOUD -->
+					<!-- 부가 솔루션 -->
+					<div id="other" class="tab_content" style="display:none;">
+						<div data-content-box>
+							<div data-solution class="other">
+								<div class="solution_tab">
+									<ul>
+										<!-- [D] 현재 페이지에 해당 되는 li에 on 클래스 부여 -->
+										<li><a href="#ring"><span>Alkom-Ring</span></a></li>
+										<li><a href="#xml"><span>Alkom-XML</span></a></li>
+										<li><a href="#acs100"><span>ACS100</span></a></li>
+										<li><a href="#aad100"><span>AAD100</span></a></li>
+										<li><a href="#asic100"><span>ASIC100</span></a></li>
+									</ul>
+								</div>
+								<!-- RING -->
+								<div id="ring" class="tab_content">
+									<div class="solution_content">
+										<div class="tit_wrap">
+											<span class="tit">
+												Alkom-Ring<br>
+												(IP-컬러링)
+											</span>
+										</div>
+										<div class="txt_wrap">
+											<p>
+												컬러링 솔루션은 발신자가 특정 기업이나 공공기관에 전화할 때 통화 연결시까지 듣게 되는 단순한 기계음 대신에 음악이나 안내멘트, 자연의 소리 등
+												다양한 소리로
+												바꿔 줌으로써 전화 거는 사람이 지루함 없이 즐겁게 기다리게 해 줄 수 있는 부가 솔루션입니다.
+											</p>
+											<p>
+												Alkom-Ring(IP 기반 컬러링 솔루션)은 IP 교환기로 들어오는 인바운드 콜에 대해 전화 발신자에게 일반적인 안내/홍보멘트 및 음악,
+												또는 고객사의
+												각종 행사이벤트 등 정보를 안내함으로써 대고객 서비스 만족도를 향상할 수 있도록 하는 솔루션으로, 기존 컬러링 솔루션이 TDM 기반으로
+												하드웨어간 연동하는
+												것과 달리 순수 IP 기반에서 IP 교환기와 연동하는 차별화된 솔루션입니다.
+											</p>
+										</div>
+									</div>
+									<div class="solution_info">
+										<div data-graphic>
+											<img src="../img/info/info_ring_01.png" alt="솔루션 안내는 유선상으로 문의바랍니다. 080-858-8119">
+										</div>
+									</div>
+								</div>
+								<!-- //RING -->
+								<!-- XML -->
+								<div id="xml" class="tab_content" style="display:none;">
+									<div class="solution_content">
+										<div class="tit_wrap">
+											<span class="tit">
+												Alkom-XML<br>
+												(이미지 발신자표시 전송)
+											</span>
+										</div>
+										<div class="txt_wrap">
+											<p>
+												이미지발신자표시(Multi-media Caller ID Display) 전송솔루션은 IP 전화기의 디스플레이 창에 전화 발신자의 전화번호가
+												나타나게 하는 것
+												뿐만 아니라 전화를 발신한 사람의 사진이미지 및 조직정보 등 다양한 정보를 표시해서 시각화시켜주는 교환기의 부가솔루션입니다.
+											</p>
+											<p>
+												Alkom-XML 솔루션은 Avaya IP 교환기와 연동하여 IP 전화기의 디스플레이 화면을 통해서 이미지 발신자정보(사진, 조직소속정보 등)를
+												표시하고,
+												전화기의 스크린세이버 기능을 통한 본인정보 표시, 회사 조직도와 연계하여 Click-to-Dial/Call 기능, 공지사항 표시 등을 구현할 수
+												있는
+												솔루션입니다.
+											</p>
+										</div>
+									</div>
+									<div class="solution_info">
+										<div data-graphic>
+											<img src="../img/info/info_xml_01.png" alt="솔루션 안내는 유선상으로 문의바랍니다. 080-858-8119">
+										</div>
+									</div>
+								</div>
+								<!-- //XML -->
+								<!-- ACS100 -->
+								<div id="acs100" class="tab_content" style="display:none;">
+									<div class="solution_content">
+										<div class="tit_wrap">
+											<span class="tit">
+												ACS100<br>
+												(Arisys CTI Solution)<br>
+												CTI</span>
+										</div>
+										<div class="txt_wrap">
+											<p>
+												ACS100 솔루션은 전국적인 지점망을 가지고 있는 기업이나 공공조직에서 지점에서 근무하고 있는 직원들이 콜센터에서 전문 상담직원들이 사용하는
+												CTI 기능을
+												활용해서 고객상담업무를 지원할 수 있도록 해주는 솔루션입니다.
+											</p>
+											<p>
+												ACS100 솔루션은 금융권의 고객 개인정보 보호 및 고객 접점에 대한 응대 자동화를 위해 컨택센터에서 사용하는 CTI 기능들을 필요로 하지만,
+												콜센터 전용
+												CTI 솔루션은 도입비용이 아주 높은 관계로 지점전용 CTI 솔루션을 개발하여 고객사에 제공하고 있습니다. 지점 CTI 솔루션(ACS100)은
+												개인정보 보호를
+												위한 비밀번호, 계좌번호, 회원번호 등의 데이터를 IVR 폰패드와 직원용 어플리케이션 간에 전달해주는 역할과 함께 직원이 사용하는 프로그램에서
+												Click-to-Call(Preview)와 함께 전화받기, 호전환 등의 CTI 기능을 제공합니다.
+											</p>
+										</div>
+									</div>
+									<div class="solution_info">
+										<div data-graphic>
+											<img src="../img/info/info_acs100_01.png" alt="솔루션 안내는 유선상으로 문의바랍니다. 080-858-8119">
+										</div>
+									</div>
+								</div>
+								<!-- //ACS100 -->
+								<!-- AAD100 -->
+								<div id="aad100" class="tab_content" style="display:none;">
+									<div class="solution_content">
+										<div class="tit_wrap">
+											<span class="tit">
+												AAD100<br>
+												(Arisys Auto DTMF Solution)<br>
+												Visual-ARS DTMF Demon
+											</span>
+										</div>
+										<div class="txt_wrap">
+											<p>
+												AAD100 솔루션은 전화기의 DTMF 톤을 인식하여 ‘보이는 ARS’ 에서 제공하는 서비스 메뉴기능이 원활하게 제공될 수 있도록 해주는 부가
+												솔루션입니다.
+											</p>
+											<p>
+												AAD100 솔루션(Visual-ARS DTMF Demon)은 보이는(Visual) ARS 솔루션과 연동하여 고객을 통하여 전달된 DTMF
+												다이얼톤을 감지,
+												고객이 ARS/IVR 메뉴를 듣는 것과 보는 것을 동시에 수행하여 고객의 셀프서비스 시간을 단축시키고, 각종 컨텐츠 및 공지, 참조 자료를
+												제공하여 보다
+												효과적인 ARS/IVR 서비스를 제공할 수 있도록 합니다.
+											</p>
+										</div>
+									</div>
+									<div class="solution_info">
+										<div data-graphic>
+											<img src="../img/info/info_aad100_01.png" alt="솔루션 안내는 유선상으로 문의바랍니다. 080-858-8119">
+										</div>
+									</div>
+								</div>
+								<!-- //AAD100 -->
+								<!-- ASIC100 -->
+								<div id="asic100" class="tab_content" style="display:none;">
+									<div class="solution_content">
+										<div class="tit_wrap">
+											<span class="tit">
+												ASIC100<br>
+												(Arisys Smart Caller ID Changing Solution)<br>
+												자동 발신자번호 변경
+											</span>
+										</div>
+										<div class="txt_wrap">
+											<p>
+												ASIC100 솔루션은 아웃바운드 텔레마케팅 활동에서 고객이 전화를 받는 응답율을 높이기 위해서 발신자번호를 고객의 특성에 따라서 자동으로
+												변경을 해주는
+												부가솔루션입니다.
+											</p>
+											<p>
+												ASIC100 (자동 발신자 번호변경 솔루션)은 기업들의 아웃바운드 텔레마케팅™ 활동을 보다 효과적으로 지원할 수 있도록 고객 DB의 특성에
+												따라 발신자
+												번호를 자동으로 변경할 수 있게 함으로써 업무 효율성을 향상할 수 있도록 지원합니다. ASIC100 (자동 발신자 번호변경 솔루션)은 Avaya
+												IP 교환기와
+												Avaya의 개발플랫폼인 Breeze 기반에서 스냅인(snap-in) 모듈 형태로 동작하여 등록된 Call 을 모니터링하여 아웃바운드 정책에
+												따라 전화
+												발신자번호를 자동 변경하도록 서비스를 제공하는 솔루션입니다.
+											</p>
+										</div>
+									</div>
+									<div class="solution_info">
+										<div data-graphic>
+											<img src="../img/info/info_asic100_01.png" alt="솔루션 안내는 유선상으로 문의바랍니다. 080-858-8119">
+										</div>
+									</div>
+								</div>
+								<!-- //ASIC100 -->
+							</div>
+						</div>
+					</div>
+					<!-- //부가 솔루션 -->
+				</div>
+			</div>
+			<!--  //서브 페이지 컨텐츠 -->
+		</div>
+		<footer>
+			<div class="container">
+				<ul class="bottom_list">
+					<li><a href="#">이용약관</a></li>
+					<li class="personal"><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+				</ul>
+				<dl class="info">
+					<div>
+						<dt>TEL</dt>
+						<dd>
+							<a href="tel:080-858-8119">080-858-8119</a>
+						</dd>
+					</div>
+					<div>
+						<dt>MAIL</dt>
+						<dd>
+							<a href="mailto:tech-support@arisys.co.kr">tech-support@arisys.co.kr</a> / <a href="mailto:sales-support@arisys.co.kr">sales-support@arisys.co.kr</a>
+						</dd>
+					</div>
+					<div class="address">
+						<dt class="hidden">주소</dt>
+						<dd>서울시 금천구 가산디지털 1로 145, 1102호 (가산동, 에이스 하이엔드타워 3차)</dd>
+					</div>
+				</dl>
+				<p class="copyright">
+					COPYRIGHT© 2019 <span>ARISYS</span> . All Rights Reserved
+				</p>
+			</div>
+		</footer>
+	</div>
+	<div class="move_top">
+		<button type="button">페이지 최상단으로 이동</button>
+	</div>
+</body>
+</html>

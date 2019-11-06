@@ -309,7 +309,7 @@ input[type="text"] {padding:0 15px; border:1px solid #dfdfdf; font-size:17px; li
 [data-board-list][data-gallery] a:before {visibility:hidden; position:absolute; top:0; left:0; z-index:1; box-sizing:border-box; width:100%; height:100%; border:3px solid #a6c742; transform:scale(1.05); transition:all 0.3s; opacity:0; content:"";}
 [data-board-list][data-gallery] a:hover:before {visibility:visible; transform:scale(1.0); opacity:1;}
 [data-board-list][data-gallery] a:after {display:none;}
-[data-board-list][data-gallery] img {width:100%; max-width:100%; margin:0;}
+[data-board-list][data-gallery] img {float:none; width:100%; max-width:100%; margin:0;}
 [data-board-list][data-gallery] .txt_wrap {padding:15px 20px 25px;}
 [data-board-list][data-gallery] .txt_wrap .tit {overflow:hidden; height:3em;}
 [data-board-list][data-gallery] .txt_wrap .txt {overflow:hidden; height:3.2em;}

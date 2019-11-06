@@ -658,9 +658,14 @@ footer .copyright span {font-family:inherit; color:#a6c742;}
 
 @media (max-width:599px) {
 	footer {padding:15px 0;}
-	footer .info > div {display:block;}
-	footer .info dd {float:none;}
-	footer .info .address {margin-top:10px;}
+	footer .bottom_list {margin:0 -8px; font-size:0; text-align:center;}
+	footer .bottom_list li {display:inline-block; float:none; padding:0 8px; font-size:12px;}
+	footer .info {margin-top:5px; font-size:0; line-height:0; text-align:center;}
+	footer .info > div,
+	footer .info dt,
+	footer .info dd {display:inline-block; overflow:visible; float:none; margin:0; font-size:10px; line-height:1.5em;}
+	footer .info > div {margin:0 5px;}
+	footer .copyright {text-align:center; margin-top:5px;}
 }
 
 /*=========================================================

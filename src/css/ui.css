@@ -1160,7 +1160,7 @@ section.blog .more:hover:after {background:#fff;}
 .partnership .portpolio_list {float:left; width:64.1%; height:180px; padding:20px 0 0 50px; background-color:rgba(0,0,0,0.6);}
 .partnership .portpolio_list .list {overflow:hidden;}
 .partnership .portpolio_list .list li {float:left; position:relative; width:33.33%; padding:15px 0 15px 35px; font-family:"Lato"; font-size:18px; line-height:1.5em; color:#fff;}
-.partnership .portpolio_list .list li:before {position:absolute; top:50%; left:0; width:24px; height:23px; margin-top:-12px; background-color:red; content:"";}
+.partnership .portpolio_list .list li:before {position:absolute; top:50%; left:0; width:24px; height:23px; margin-top:-12px; background:url(../img/sprite/sprite.png); background-position:-99px -157px; background-size:250px; content:"";}
 .partnership .bgc {margin-bottom:-150px; background-color:rgba(0,0,0,0.2);}
 .partnership .certification {padding:30px 0 50px;}
 .partnership .certification .cont_tit {color:#fff; text-align:center;}

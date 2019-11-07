@@ -166,10 +166,10 @@ html {overflow-y:scroll; -webkit-font-smoothing:antialiased; -moz-osx-font-smoot
 .move_top button:before {position:absolute; top:5px; left:50%; width:0; height:0; margin-left:-6px; border-width:6px; border-style:solid; border-color:transparent transparent #a6c742 transparent; background:none; -webkit-transition:all 0.3s; transition:all 0.3s; content:"";}
 .move_top button:hover:before {border-bottom-color:#fff;}
 
-.ie9 {display:table; position:fixed; bottom:0; left:0; z-index:999; width:100%; min-height:100px; padding:5px 60px; background:#000;; font-size:14px; line-height:2em; color:#fff; text-align:center;}
+.ie9 {display:table; position:fixed; bottom:0; left:0; z-index:999; width:100%; min-height:100px; padding:5px 60px; background:#a6c742; font-size:14px; line-height:2em; color:#fff; text-align:center;}
 .ie9 .inner {display:table-cell; vertical-align:middle;}
 .ie9 .inner a {font-size:16px; font-weight:700; color:#fff;}
-.ie9 button {overflow:hidden; position:absolute; top:20px; right:20px; width:30px; height:30px; background:url(../img/sprite/sprite.png); background-position:-10px -258px; text-indent:-9999px;}
+.ie9 button {overflow:hidden; position:absolute; top:20px; right:20px; width:30px; height:30px; background:url(../img/sprite/sprite.png); background-position:-460px -10px; text-indent:-9999px;}
 
 @media (max-width:1024px) {
 	.content {padding-top:45px;}
@@ -508,7 +508,7 @@ input[type="text"] {padding:0 15px; border:1px solid #dfdfdf; font-size:17px; li
 [data-solution].other .solution_tab ul li a {display:block; position:relative; padding-bottom:20px;}
 [data-solution].other .solution_tab ul li a span {display:block; position:relative; top:0; font-family:"Nanum Square"; font-size:17px; line-height:1.5em; color:#999; -webkit-transition:all 0.3s; transition:all 0.3s;}
 [data-solution].other .solution_tab ul li.on a span,
-[data-solution].other .solution_tab ul li a:hover span {top:-5px; font-weight:700; color:#a6c742;}
+[data-solution].other .solution_tab ul li a:hover span {font-weight:700; color:#a6c742;}
 [data-solution].other .solution_tab ul li a:before,
 [data-solution].other .solution_tab ul li a:after {position:absolute; left:50%; z-index:1; border-radius:50%; -webkit-transition:all 0.3s; transition:all 0.3s; content:"";}
 [data-solution].other .solution_tab ul li a:before {bottom:-5px; width:10px; height:10px; margin-left:-5px; background:#999; opacity:0.8;}

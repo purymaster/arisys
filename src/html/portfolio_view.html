@@ -1,7 +1,7 @@
 @@include('header.html')
 <div class="content">
 	@@include('sub_visual.html', {
-	"type" : "type4",
+	"type" : "type3",
 	"sub_tit" : "CLIENTS",
 	"tit" : "CASE STUDIES"
 	})
@@ -9,7 +9,180 @@
 	<!--  서브 페이지 컨텐츠 -->
 	<div class="" data-sub-content>
 		<div class="container">
+			<div data-portfolio-view>
 
+				<!-- 포트폴리오 헤더 -->
+				<div class="port_header">
+					<div class="img_wrap">
+						<img src="https://via.placeholder.com/210x70" alt="" class="logo">
+					</div>
+					<div class="txt_wrap">
+						<h3 class="tit">
+							여기가 포트폴리오 제목이 들어갈 부분입니다.
+						</h3>
+						<p class="sub_txt">
+							Category insert here.
+						</p>
+					</div>
+				</div>
+				<!-- 포트폴리오 헤더 -->
+
+				<!-- 포트폴리오 컨텐츠 -->
+				<div class="port_content">
+
+					<!-- 첼린지, 솔루션 -->
+					<div class="info_wrap">
+						<div class="cont">
+							<div class="tit">CHALLENGE</div>
+							<div class="txt">
+								<ul>
+									<li>Challenge 항목에 들어갈 내용을 작성하는 곳입니다.</li>
+									<li>컨택센터 CTI 활용 개선</li>
+									<li>콜인프라 노후화 개선</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cont">
+							<div class="tit">SOLUTION</div>
+							<div class="txt">
+								<ul>
+									<li>Solution 항목에 들어갈 내용을 작성하는 곳입니다.</li>
+									<li>Avaya의 AAEP로 교체 및 CTI 통합 라우팅</li>
+									<li>기존 솔루션 개선 및 재구축으로 시스템 안정화 실현</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //첼린지, 솔루션 -->
+
+					<!-- 메인 텍스트 -->
+					<div class="main_txt">
+						메인 텍스트는 여기에 작성하시면 됩니다.<br>
+						Avaya IP-PBX 와 AAEP IVR 시스템으로 교체에 따른 시스템 안정성과 신뢰성 확보<br>
+						성공적인 망전환으로 인한 독자적인 콜시스템 구축
+						<strong>㈜아리시스의 전문가 그룹과 함께 했습니다.</strong>
+					</div>
+					<!-- //메인 텍스트 -->
+
+					<!-- 카테고리 구분 -->
+					<!-- 
+						- 한 줄에 출력될 수 있는 항목은 최대 9개입니다.
+						- 홀수번째 아이콘이 상단, 짝수번째 아이콘이 하단으로 배치됩니다.
+						- 사용하지 않는 카테고리는 주석 처리해주시면 화면에 노출되지 않습니다.
+						- icon 모양은 data-value에 있는 값으로 정해집니다. 따라서 항목의 순서를 바꾸거나 주석처리하는 것은 무관하지만, 값을 임의로 바꾸시면 안됩니다.
+					-->
+					<div class="category">
+						<ul>
+							<li data-value="Open Queue">
+								<i></i><span>Open Queue</span>
+							</li>
+							<li data-value="Inbound Voice">
+								<i></i><span>Inbound Voice</span>
+							</li>
+							<li data-value="Progressive Outbound">
+								<i></i><span>Progressive Outbound</span>
+							</li>
+							<li data-value="Instant Messaging">
+								<i></i><span>Instant Messaging</span>
+							</li>
+							<li data-value="Web Chat">
+								<i></i><span>Web Chat</span>
+							</li>
+							<li data-value="SMS">
+								<i></i><span>SMS</span>
+							</li>
+							<li data-value="Email">
+								<i></i><span>Email</span>
+							</li>
+							<li data-value="Chat">
+								<i></i><span>Chat</span>
+							</li>
+							<li data-value="Agent Application">
+								<i></i><span>Agent Application</span>
+							</li>
+							<!-- <li data-value="Reporting">
+								<i></i><span>Reporting</span>
+							</li>
+							<li data-value="SocialMedia">
+								<i></i><span>SocialMedia</span>
+							</li>
+							<li data-value="IVR">
+								<i></i><span>IVR(Self SVC)</span>
+							</li>
+							<li data-value="Recoding">
+								<i></i><span>Recoding</span>
+							</li>
+							<li data-value="Data Base">
+								<i></i><span>Data Base</span>
+							</li>
+							<li data-value="Agents">
+								<i></i><span>Agents</span>
+							</li>
+							<li data-value="Expert Assist">
+								<i></i><span>Expert Assist</span>
+							</li>
+							<li data-value="End Customers">
+								<i></i><span>End Customers</span>
+							</li>
+							<li data-value="Video">
+								<i></i><span>Video</span>
+							</li>
+							<li data-value="Agent Assist">
+								<i></i><span>Agent Assist</span>
+							</li> -->
+						</ul>
+					</div>
+					<!-- //카테고리 구분 -->
+
+					<!-- 고객후기 -->
+					<div class="review">
+						<p>
+							"고객후기를 작성하는 곳입니다. 국회가 재적의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야 한다. 대법원과 각급법원의 조직은 법률로
+							정한다. 제2항의 재판관중 3인은 국회에서 선출하는 자를, 3인은 대법원장이 지명하는 자를 임명한다.
+						</p>
+						<p>
+							나는 헌법을 준수하고 국가를 보위하며 조국의 평화적 통일과
+							국민의 자유와 복리의 증진 및 민족문화의 창달에 노력하여 대통령으로서의 직책을 성실히 수행할 것을 국민 앞에 엄숙히 선서합니다."
+						</p>
+						<div class="author">120 다산콜재단 홍길동 단장</div>
+					</div>
+					<!-- //고객후기 -->
+
+					<!-- 니즈, 개선점 -->
+					<div class="point_wrap">
+						<div class="cont need">
+							<span class="tit">THE NEED</span>
+							<ul>
+								<li>니즈에 해당되는 내용은 여기에 작성해주시면 됩니다.</li>
+								<li>상담 APP시스템 개선을 통한 효율적 상담 운영체계의 수립</li>
+							</ul>
+						</div>
+						<div class="cont implement">
+							<span class="tit">THE IMPLEMENTATION</span>
+							<ul>
+								<li>개선점에 해당되는 내용은 여기에 작성해주시면 됩니다.</li>
+								<li>120다산콜재단의 독자적인 설립에 따른 상담사와 시청, 시민간의 원활한 상담체계의 구축 및 망전환에 따른 보안이슈를 망연계 시스템 도입을 통해서 해결.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //니즈, 개선점 -->
+
+				</div>
+				<!-- //포트폴리오 컨텐츠 -->
+
+				<div class="list_btn">
+					<a href="#">
+						<div>
+							목록보기
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</a>
+				</div>
+
+			</div>
 		</div>
 	</div>
 	<!--  //서브 페이지 컨텐츠 -->

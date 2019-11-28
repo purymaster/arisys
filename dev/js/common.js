@@ -120,7 +120,7 @@ $(function() {
 
     /* 메인페이지 블로그 슬라이드 */
     $('section.blog [data-slide]').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [{
                 breakpoint: 1024,

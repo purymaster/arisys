@@ -77,14 +77,39 @@ $(function () {
 		header = parseInt($('.header_wrap').css('height'));
 	})
 
-	/* 메인페이지 스크롤 기능 */
-
+	/* 메인페이지 스크롤 버튼 */
 	$('.main_visual .scroll').on('click', function () {
 		position = $('section.solution').offset().top - header;
 		$('html,body').animate({
 			"scrollTop": position
-		}, 300);
+		}, {
+			duration: 300,
+			complete: function () {
+				console.log('aa');
+			},
+		});
 		return false;
+	});
+
+	var scroll_pos = $(window).scrollTop();
+
+	// should start at 0
+
+	$(window).on('load scroll', function (event) {
+		var scroll_top = $(window).scrollTop();
+		var position = $('section.solution').offset().top - header;
+		if (scroll_pos < 1) {
+			if (scroll_top > scroll_pos) { // down
+				$('html,body').animate({
+					"scrollTop": position
+				}, {
+					duration: 300
+				});
+			}
+			scroll_pos = scroll_top;
+		} else {
+			scroll_pos = scroll_top;
+		}
 	});
 
 	/* 메인페이지 메인 슬라이드 */

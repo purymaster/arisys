@@ -299,7 +299,7 @@
 			<!-- //포트폴리오 -->
 			<!-- 블로그 -->
 			<section class="blog">
-				<ul class="container">
+				<div class="container">
 					<div class="box tit">
 						<div class="tit_wrap" data-animation="fadeInUp" data-delay="0">
 							<h2 class="tit">BLOG</h2>
@@ -402,44 +402,69 @@
 						</li>
 					</ul>
 					<a href="#" class="more">더 많은 소식 보기</a>
+				</div>
+			</section>
+			<!-- //블로그 -->
+			<script>
+				$(function () {
+			$(window).on('load resize', function () {
+				header = parseInt($('.header_wrap').css('height'));
+			})
+			var scroll_pos = $(window).scrollTop();
+			// should start at 0
+			$(window).on('load scroll', function (event) {
+				var scroll_top = $(window).scrollTop();
+				var position = $('section.solution').offset().top - header;
+				if (scroll_pos < 1) {
+					if (scroll_top > scroll_pos) { // down
+						$('html,body').animate({
+							"scrollTop": position
+						}, {
+							duration: 300
+						});
+					}
+					scroll_pos = scroll_top;
+				} else {
+					scroll_pos = scroll_top;
+				}
+			});
+		});
+	</script>
 		</div>
-		</section>
-		<!-- //블로그 -->
-	</div>
-	<footer>
-		<div class="container">
-			<!-- <ul class="bottom_list">
+		<footer>
+			<div class="container">
+				<!-- <ul class="bottom_list">
 			<li><a href="#">이용약관</a></li>
 			<li class="personal"><a href="#">개인정보처리방침</a></li>
 			<li><a href="#">이메일주소무단수집거부</a></li>
 		</ul> -->
-			<ul class="sns_list">
-				<li class="facebook"><a href="#" title="새창열림" target="_blank">아리시스 페이스북</a></li>
-				<li class="instagram"><a href="#" title="새창열림" target="_blank">아리시스 인스타그램</a></li>
-			</ul>
-			<dl class="info">
-				<div>
-					<dt>TEL</dt>
-					<dd>
-						<a href="tel:02-2177-8100">02-2177-8100</a>
-					</dd>
-				</div>
-				<div>
-					<dt>MAIL</dt>
-					<dd>
-						<a href="mailto:tech@arisys.co.kr">tech@arisys.co.kr</a> / <a href="mailto:sales@arisys.co.kr">sales@arisys.co.kr</a>
-					</dd>
-				</div>
-				<div class="address">
-					<dt class="hidden">주소</dt>
-					<dd>서울시 금천구 가산디지털 1로 145, 1102호 (가산동, 에이스 하이엔드타워 3차)</dd>
-				</div>
-			</dl>
-			<p class="copyright">
-				COPYRIGHT© 2019 <span>ARISYS</span> . All Rights Reserved
-			</p>
-		</div>
-	</footer>
+				<ul class="sns_list">
+					<li class="facebook"><a href="#" title="새창열림" target="_blank">아리시스 페이스북</a></li>
+					<li class="instagram"><a href="#" title="새창열림" target="_blank">아리시스 인스타그램</a></li>
+				</ul>
+				<dl class="info">
+					<div>
+						<dt>TEL</dt>
+						<dd>
+							<a href="tel:02-2177-8100">02-2177-8100</a>
+						</dd>
+					</div>
+					<div>
+						<dt>MAIL</dt>
+						<dd>
+							<a href="mailto:tech@arisys.co.kr">tech@arisys.co.kr</a> / <a href="mailto:sales@arisys.co.kr">sales@arisys.co.kr</a>
+						</dd>
+					</div>
+					<div class="address">
+						<dt class="hidden">주소</dt>
+						<dd>서울시 금천구 가산디지털 1로 145, 1102호 (가산동, 에이스 하이엔드타워 3차)</dd>
+					</div>
+				</dl>
+				<p class="copyright">
+					COPYRIGHT© 2019 <span>ARISYS</span> . All Rights Reserved
+				</p>
+			</div>
+		</footer>
 	</div>
 	<div class="move_top">
 		<button type="button">페이지 최상단으로 이동</button>

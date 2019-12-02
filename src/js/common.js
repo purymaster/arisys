@@ -71,13 +71,14 @@ $(function () {
 
 	/******************** 메인페이지 제어 ********************/
 
-	var header, position;
+	var header, position, is_main;
 
 	$(window).on('load resize', function () {
 		header = parseInt($('.header_wrap').css('height'));
 	})
 
-	/* 메인페이지 스크롤 버튼 */
+	/* 메인페이지 스크롤 기능 */
+
 	$('.main_visual .scroll').on('click', function () {
 		position = $('section.solution').offset().top - header;
 		$('html,body').animate({
@@ -120,28 +121,28 @@ $(function () {
 	});
 
 	/* 메인페이지 블로그 슬라이드 */
-	$('section.blog [data-slide]').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 2
-				}
-			},
-			{
-				breakpoint: 599,
-				settings: {
-					slidesToShow: 1,
-					adaptiveHeight: true
-				}
-			}
-		]
-	});
+	// $('section.blog [data-slide]').slick({
+	// 	slidesToShow: 4,
+	// 	slidesToScroll: 1,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 1024,
+	// 			settings: {
+	// 				slidesToShow: 2
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 599,
+	// 			settings: {
+	// 				slidesToShow: 1,
+	// 				adaptiveHeight: true
+	// 			}
+	// 		}
+	// 	]
+	// });
 
 	/******************** 솔루션 탭메뉴 제어 ********************/
-	
+
 	$('[data-tab-menu] a,.solution_tab a').on('click', function (e) {
 		e.preventDefault();
 		$(this).parent().addClass('on').siblings().removeClass('on');

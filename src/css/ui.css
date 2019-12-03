@@ -1003,7 +1003,7 @@ section.portfolio .slider {position:relative; margin-top:60px; margin-bottom:-22
 section.portfolio [data-slide] .slide {height:222px; padding:0 10px; color:#333;}
 section.portfolio [data-slide] .slide a {display:block; position:relative; height:100%; padding:25px 15px 0;}
 section.portfolio [data-slide] .slide a:before {position:absolute; top:0; left:0; z-index:-1; width:100%; height:calc(100% - 22px); background:#fff; content:"";}
-section.portfolio [data-slide] .slide .cate {display:inline-block; padding:0 10px; border:1px solid #333; border-radius:13px; font-family:"Lato"; font-size:14px; line-height:25px; transition:all 0.3s;}
+section.portfolio [data-slide] .slide .cate {display:inline-block; padding:0 10px; border:1px solid #333; border-radius:13px; font-size:14px; line-height:25px; transition:all 0.3s;}
 section.portfolio [data-slide] .slide a:hover .cate {border-color:#a6c742; color:#a6c742;}
 section.portfolio [data-slide] .slide img {display:block; max-width:100%; max-height:40px; margin:40px auto 0;}
 section.portfolio [data-slide] .slide .link {visibility:hidden; position:absolute; bottom:0; left:50%; width:45px; height:45px; margin-left:-22px; border-radius:50%; background:#a6c742; text-indent:-9999px; transition:all 0.3s; opacity:0;}

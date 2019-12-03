@@ -83,10 +83,7 @@ $(function () {
 		$('html,body').animate({
 			"scrollTop": position
 		}, {
-			duration: 300,
-			complete: function () {
-				console.log('aa');
-			},
+			duration: 300
 		});
 		return false;
 	});

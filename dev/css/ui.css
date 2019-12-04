@@ -384,7 +384,7 @@ input[type="text"] {height:50px; padding:0 15px; border:1px solid #dfdfdf; font-
 [data-board-view] .view_header .info li {float:left; position:relative; padding:0 15px; border-right:1px solid #999; line-height:0;}
 [data-board-view] .view_header .info li:last-child {border:0;}
 [data-board-view] .view_header .info li span {display:inline-block; position:relative; padding-left:25px; font-family:"Lato"; font-size:14px; line-height:16px; color:#999;}
-[data-board-view] .view_header .info li span:before {position:absolute; top:50%; left:0; background:url(../img/sprite/sprite.png); background-position-y:-157px; background-size:250px; -webkit-transform:translateY(-50%); transform:translateY(-50%); content:"";}
+[data-board-view] .view_header .info li span:before {position:absolute; top:50%; left:0; background:url(../img/sprite/sprite.png); background-position-y:-157px; background-size:250px 300px; -webkit-transform:translateY(-50%); transform:translateY(-50%); content:"";}
 [data-board-view] .view_header .info .date span:before {width:16px; height:16px; background-position-x:-5px;}
 [data-board-view] .view_header .info .view span:before {width:18px; height:12px; background-position-x:-26px;}
 [data-board-view] .view_content {overflow:hidden; padding:40px 30px; font-size:16px; line-height:1.5em;}
@@ -834,11 +834,13 @@ footer .bottom_list li:last-child:after {display:none;}
 footer .bottom_list li a {display:block; color:#fff;}
 footer .sns_list {position:absolute; top:0; right:30px;}
 footer .sns_list li {float:left; margin-left:10px;}
-footer .sns_list li a {display:block; width:30px; height:30px; background:url(../img/sprite/sprite.png); background-position-y:-137px; background-size:250px; text-indent:-9999px;}
-footer .sns_list li.facebook a {background-position-x:-128px;}
-footer .sns_list li.facebook a:hover {background-position-x:-158px;}
-footer .sns_list li.instagram a {background-position-x:-188px;}
-footer .sns_list li.instagram a:hover {background-position-x:-218px;}
+footer .sns_list li a {display:block; width:30px; height:30px; background:url(../img/sprite/sprite.png); background-position-y:-250px; background-size:250px 300px; text-indent:-9999px;}
+footer .sns_list li.facebook a {background-position-x:-5px;}
+footer .sns_list li.facebook a:hover {background-position-x:-35px;}
+footer .sns_list li.instagram a {background-position-x:-65px;}
+footer .sns_list li.instagram a:hover {background-position-x:-95px;}
+footer .sns_list li.youtube a {background-position-x:-125px;}
+footer .sns_list li.youtube a:hover {background-position-x:-155px;}
 footer .info {margin-top:25px;}
 footer .info > div {display:inline-block; overflow:hidden; margin-right:10px;}
 footer .info dt {float:left;}
@@ -1158,7 +1160,7 @@ section.blog .more:hover:after {background:#fff;}
 [data-sub-visual] .breadcrumb ol:after {content:""; display:block; clear:both;}
 [data-sub-visual] .breadcrumb ol > li {float:left; border-right:1px solid rgba(255,255,255,0.5);}
 [data-sub-visual] .breadcrumb .home a {display:block; position:relative; width:50px; height:50px; text-indent:-9999px;}
-[data-sub-visual] .breadcrumb .home a:before {position:absolute; top:50%; left:50%; width:18px; height:18px; margin-top:-9px; margin-left:-9px; background:url(../img/sprite/sprite.png); background-position:-49px -157px; background-size:250px; content:"";}
+[data-sub-visual] .breadcrumb .home a:before {position:absolute; top:50%; left:50%; width:18px; height:18px; margin-top:-9px; margin-left:-9px; background:url(../img/sprite/sprite.png); background-position:-49px -157px; background-size:250px 300px; content:"";}
 [data-sub-visual] .breadcrumb .select_form {background:none;}
 [data-sub-visual] .breadcrumb .select_form button {min-width:200px; padding:0 50px 0 15px; border:0; background:none; font-size:14px; font-weight:700; line-height:50px; color:#fff;}
 [data-sub-visual] .breadcrumb .select_form button:after {right:20px; border-color:#fff;}
@@ -1202,7 +1204,7 @@ section.blog .more:hover:after {background:#fff;}
 .mission .proper .tit {background-color:rgba(153,193,66,0.9);}
 .mission .customer .tit {background-color:rgba(65,137,19,0.7);}
 .mission .human .tit {background-color:rgba(72,72,72,0.7);}
-.mission .column .tit:before {position:absolute; top:40px; left:50%; width:60px; height:60px; background:url(../img/sprite/sprite.png); background-position-y:-185px; background-size:250px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.mission .column .tit:before {position:absolute; top:40px; left:50%; width:60px; height:60px; background:url(../img/sprite/sprite.png); background-position-y:-185px; background-size:250px 300px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
 .mission .proper .tit:before {background-position-x:-5px;}
 .mission .customer .tit:before {background-position-x:-70px;}
 .mission .human .tit:before {background-position-x:-135px;}
@@ -1387,7 +1389,7 @@ section.blog .more:hover:after {background:#fff;}
 .partnership .portpolio_list {float:left; width:64.1%; height:180px; padding:20px 0 0 50px; background-color:rgba(0,0,0,0.6);}
 .partnership .portpolio_list .list {overflow:hidden;}
 .partnership .portpolio_list .list li {float:left; position:relative; width:33.33%; padding:15px 0 15px 35px; font-family:"Lato"; font-size:18px; line-height:1.5em; color:#fff;}
-.partnership .portpolio_list .list li:before {position:absolute; top:50%; left:0; width:24px; height:23px; margin-top:-12px; background:url(../img/sprite/sprite.png); background-position:-99px -157px; background-size:250px; content:"";}
+.partnership .portpolio_list .list li:before {position:absolute; top:50%; left:0; width:24px; height:23px; margin-top:-12px; background:url(../img/sprite/sprite.png); background-position:-99px -157px; background-size:250px 300px; content:"";}
 .partnership .bgc {margin-bottom:-150px; background-color:rgba(0,0,0,0.2);}
 .partnership .certification {padding:30px 0 50px;}
 .partnership .certification .cont_tit {color:#fff; text-align:center;}
@@ -1543,7 +1545,7 @@ section.blog .more:hover:after {background:#fff;}
 .recruit .recruit_tit .cont_text .download a {display:inline-block; position:relative; padding:0 20px; border:3px solid #fff; border-radius:5px; line-height:44px; color:#fff; -webkit-transition:all 0.3s; transition:all 0.3s;}
 .recruit .recruit_tit .cont_text .download a:hover {border-color:#a6c742; background:#a6c742;}
 .recruit .recruit_tit .cont_text .download a span {display:block; position:relative; padding-right:30px; font-family:"Nanum Square"; font-size:18px; font-weight:700;}
-.recruit .recruit_tit .cont_text .download a span:after {position:absolute; top:50%; right:0; width:22px; height:20px; margin-top:-10px; background:url(../img/sprite/sprite.png); background-position:-72px -157px; background-size:250px; content:"";}
+.recruit .recruit_tit .cont_text .download a span:after {position:absolute; top:50%; right:0; width:22px; height:20px; margin-top:-10px; background:url(../img/sprite/sprite.png); background-position:-72px -157px; background-size:250px 300px; content:"";}
 .recruit .bottom_cont > li {padding:50px 0; border-bottom:1px solid #cdcdcd;}
 .recruit .cont_wrap {overflow:hidden;}
 .recruit .cont_wrap .tit {float:left; width:30.6%; padding:0; background-color:#fff;;}
@@ -1560,7 +1562,7 @@ section.blog .more:hover:after {background:#fff;}
 .recruit .cont_wrap .cont_text .process li:after {position:absolute; top:44px; right:-5px; width:20px; height:20px; border-top:4px solid #aaa; border-right:4px solid #aaa; -webkit-transform:rotate(45deg); transform:rotate(45deg); content:"";}
 .recruit .cont_wrap .cont_text .process li:last-child:after {display:none;}
 .recruit .cont_wrap .cont_text .process li .txt {display:block; margin-top:15px; font-size:16px; font-weight:700; line-height:1.5em;}
-.recruit .cont_wrap .cont_text .process li .txt:before {position:absolute; top:27px; left:50%; background:url(../img/sprite/sprite.png); background-position-y:-77px; background-size:250px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
+.recruit .cont_wrap .cont_text .process li .txt:before {position:absolute; top:27px; left:50%; background:url(../img/sprite/sprite.png); background-position-y:-77px; background-size:250px 300px; -webkit-transform:translateX(-50%); transform:translateX(-50%); content:"";}
 .recruit .cont_wrap .cont_text .process li:nth-child(1) .txt:before {width:49px; height:55px; background-position-x:-5px;}
 .recruit .cont_wrap .cont_text .process li:nth-child(2) .txt:before {width:55px; height:55px; background-position-x:-59px;}
 .recruit .cont_wrap .cont_text .process li:nth-child(3) .txt:before {width:55px; height:55px; background-position-x:-119px;}
